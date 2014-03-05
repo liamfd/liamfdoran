@@ -11,7 +11,6 @@ $navHeight: 38px;
 	text-align: center;
 	width:25%;
 	height:$navHeight;
-	font-size:20px;
 }
 
 $triangleHeight: 30px; //really a width too
@@ -31,6 +30,9 @@ $triangleHeight: 30px; //really a width too
 		//border-radius:10000px;
 		//width:$circleDiameter;
 		//height:$circleDiameter;
+	}
+	h3.title{
+
 	}
 }
 
