@@ -1,0 +1,48 @@
+nav {
+	width:100%;
+	text-align:center;
+	height:45px;
+
+}
+
+$navHeight: 50px;
+.navBlock{
+	display:inline-block;
+	text-align: center;
+	width:25%;
+	height:$navHeight;
+	font-size:20px;
+}
+
+$circleDiameter: 40px;
+.navCircleWrapper{
+	width:100%;
+	margin-top:$navHeight - $circleDiameter; //moves it as far from top as it can
+
+	.navCircle{
+		display:inline-block;
+		vertical-align:bottom;
+		background-color:$red;
+		border-radius:10000px;
+		width:$circleDiameter;
+		height:$circleDiameter;
+	}
+}
+
+$circleBorder: 3px;
+$circleSmallerDiameter: $circleDiameter - $circleBorder*2;
+
+.navCircle:hover{
+	background-color:$white;
+	border: $circleBorder solid $red;
+	width:$circleSmallerDiameter;
+	height:$circleSmallerDiameter;
+}
+/*
+.navBlock:hover{
+	background-color:$red;
+	.navCircle{
+		background-color:$white;
+	}
+}*/
+

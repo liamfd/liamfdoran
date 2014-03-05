@@ -10,15 +10,18 @@
     right: 0;
 
     margin: auto;
+    text-align: center;
 }
 
 .frame{
     background-color: $white;
-    height:300px;
+    height:400px;
+    border-radius: 3px;
 }
 
 .name{
-    font-family:"neovix basic";
+    font-family:"Telegrafico";
+    letter-spacing: 3px;
     font-size:3em;
     color:$white;
 }
