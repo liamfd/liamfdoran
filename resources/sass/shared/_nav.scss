@@ -14,6 +14,35 @@ $navHeight: 50px;
 	font-size:20px;
 }
 
+$triangleHeight: 30px; //really a width too
+.navEleWrapper{
+	width:100%;
+	margin-top:$navHeight - $triangleHeight; //moves it as far from top as it can
+
+	.triangle{
+		display:inline-block;
+
+		width: 0; 
+		height: 0; 
+		border-left: $triangleHeight solid transparent;
+		border-right: $triangleHeight solid transparent;
+		
+		border-bottom: $triangleHeight solid $red;
+		//border-radius:10000px;
+		//width:$circleDiameter;
+		//height:$circleDiameter;
+	}
+}
+
+.triangle:hover{
+	border-left: $triangleHeight solid transparent;
+	border-right: $triangleHeight solid transparent;
+	border-bottom:0px solid transparent;
+	border-top: $triangleHeight solid $red;
+	
+}
+
+/*
 $circleDiameter: 40px;
 .navCircleWrapper{
 	width:100%;
@@ -28,6 +57,8 @@ $circleDiameter: 40px;
 		height:$circleDiameter;
 	}
 }
+//MAYBE MAKE THE NAV ELEMENTS DOWNWARD TRIANGLES THAT SPIN UPWARDS?
+
 
 $circleBorder: 3px;
 $circleSmallerDiameter: $circleDiameter - $circleBorder*2;
@@ -38,6 +69,8 @@ $circleSmallerDiameter: $circleDiameter - $circleBorder*2;
 	width:$circleSmallerDiameter;
 	height:$circleSmallerDiameter;
 }
+
+*/
 /*
 .navBlock:hover{
 	background-color:$red;

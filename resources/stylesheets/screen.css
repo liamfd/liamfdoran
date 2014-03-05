@@ -127,26 +127,26 @@ nav {
 }
 
 /* line 18, ../sass/shared/_nav.scss */
-.navCircleWrapper {
+.navEleWrapper {
   width: 100%;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 /* line 22, ../sass/shared/_nav.scss */
-.navCircleWrapper .navCircle {
+.navEleWrapper .triangle {
   display: inline-block;
-  vertical-align: bottom;
-  background-color: #660000;
-  border-radius: 10000px;
-  width: 40px;
-  height: 40px;
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 30px solid #660000;
 }
 
-/* line 35, ../sass/shared/_nav.scss */
-.navCircle:hover {
-  background-color: #f2f2f2;
-  border: 3px solid #660000;
-  width: 34px;
-  height: 34px;
+/* line 37, ../sass/shared/_nav.scss */
+.triangle:hover {
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 0px solid transparent;
+  border-top: 30px solid #660000;
 }
 
 /*
