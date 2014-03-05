@@ -97,38 +97,40 @@ img {
   max-width: 100%;
 }
 
+/* line 24, ../sass/shared/_common.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 /* line 1, ../sass/shared/_frame.scss */
 .centered {
-  width: 600px;
-  height: 400px;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
+  margin-top: 15%;
   text-align: center;
 }
 
-/* line 16, ../sass/shared/_frame.scss */
+/* line 11, ../sass/shared/_frame.scss */
 .frame {
+  display: inline-block;
   background-color: #f2f2f2;
   border-radius: 3px;
+  max-width: 700px;
+  width: 100%;
 }
 
-/* line 21, ../sass/shared/_frame.scss */
+/* line 19, ../sass/shared/_frame.scss */
 h1.name {
-  font-kerning: 8px;
   letter-spacing: 3px;
   color: #f2f2f2;
 }
 
-/* line 27, ../sass/shared/_frame.scss */
+/* line 24, ../sass/shared/_frame.scss */
 .container {
   padding: 10px;
 }
 
-/* line 31, ../sass/shared/_frame.scss */
+/* line 28, ../sass/shared/_frame.scss */
 a.email {
   display: inline-block;
   text-decoration: none;
