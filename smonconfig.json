@@ -1,0 +1,7 @@
+{
+    "command" : "jade pages/* -o . -O ./config.json",
+    "threshold" : 200,
+    "restart" : false,
+    "restartDelay" : 500,
+    "debug" : false
+}
