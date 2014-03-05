@@ -1,0 +1,17 @@
+h2.title{
+	color:$red;
+}
+
+.projectsRow{
+	width:100%;
+	text-align:center;
+}
+
+.project{
+	display:inline-block;
+	width:30%;
+	margin-left:3px;
+	margin-right:3px;
+	background-color:$grey;
+	height:30px;
+}

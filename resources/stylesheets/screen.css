@@ -74,12 +74,27 @@ body {
 
 /* line 5, ../sass/shared/_common.scss */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "neovix basic";
+  font-family: "Telegrafico", sans-serif;
 }
 
-/* line 9, ../sass/shared/_common.scss */
-p {
-  font-family: "arial";
+/* line 8, ../sass/shared/_common.scss */
+h1 {
+  font-size: 50px;
+}
+
+/* line 12, ../sass/shared/_common.scss */
+h2 {
+  font-size: 45px;
+}
+
+/* line 16, ../sass/shared/_common.scss */
+p, a {
+  font-family: "Bitter", serif;
+}
+
+/* line 20, ../sass/shared/_common.scss */
+img {
+  max-width: 100%;
 }
 
 /* line 1, ../sass/shared/_frame.scss */
@@ -98,16 +113,28 @@ p {
 /* line 16, ../sass/shared/_frame.scss */
 .frame {
   background-color: #f2f2f2;
-  height: 400px;
   border-radius: 3px;
 }
 
-/* line 22, ../sass/shared/_frame.scss */
-.name {
-  font-family: "Telegrafico";
+/* line 21, ../sass/shared/_frame.scss */
+h1.name {
+  font-kerning: 8px;
   letter-spacing: 3px;
-  font-size: 3em;
   color: #f2f2f2;
+}
+
+/* line 27, ../sass/shared/_frame.scss */
+.container {
+  padding: 10px;
+}
+
+/* line 31, ../sass/shared/_frame.scss */
+a.email {
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 20px;
+  color: #660000;
+  font-size: 20px;
 }
 
 /* line 1, ../sass/shared/_nav.scss */
@@ -122,14 +149,14 @@ nav {
   display: inline-block;
   text-align: center;
   width: 25%;
-  height: 50px;
+  height: 38px;
   font-size: 20px;
 }
 
 /* line 18, ../sass/shared/_nav.scss */
 .navEleWrapper {
   width: 100%;
-  margin-top: 20px;
+  margin-top: 8px;
 }
 /* line 22, ../sass/shared/_nav.scss */
 .navEleWrapper .triangle {
@@ -156,3 +183,38 @@ nav {
 		background-color:$white;
 	}
 }*/
+/* line 1, ../sass/content/_bio.scss */
+h2.title {
+  color: #660000;
+}
+
+/* line 5, ../sass/content/_bio.scss */
+.bioText {
+  padding-top: 10px;
+  line-height: 20px;
+}
+/* line 8, ../sass/content/_bio.scss */
+.bioText p {
+  color: gray;
+}
+
+/* line 1, ../sass/content/_projects.scss */
+h2.title {
+  color: #660000;
+}
+
+/* line 5, ../sass/content/_projects.scss */
+.projectsRow {
+  width: 100%;
+  text-align: center;
+}
+
+/* line 10, ../sass/content/_projects.scss */
+.project {
+  display: inline-block;
+  width: 30%;
+  margin-left: 3px;
+  margin-right: 3px;
+  background-color: gray;
+  height: 30px;
+}

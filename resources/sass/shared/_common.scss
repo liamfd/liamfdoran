@@ -3,9 +3,20 @@ body{
 }
 
 h1, h2, h3, h4, h5, h6{
-	font-family:"neovix basic"
+	font-family:"Telegrafico", sans-serif;
+}
+h1{
+	font-size:50px;
 }
 
-p{
-	font-family:"arial"
+h2{
+	font-size:45px;
+}
+
+p, a{
+	font-family:"Bitter", serif;
+}
+
+img {
+	max-width:100%;
 }
