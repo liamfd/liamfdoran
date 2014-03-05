@@ -227,32 +227,57 @@ nav {
 .projectsRow {
   width: 100%;
   text-align: center;
-  height: 200px;
+  min-height: 150px;
   margin-top: 10px;
 }
 
 /* line 7, ../sass/content/_projects.scss */
-.projectContainer {
+.project {
+  display: inline-block;
   width: 30%;
-  height: 100px;
+  height: 30px;
+  text-align: center;
+}
+
+/* line 14, ../sass/content/_projects.scss */
+.projectImageContainer {
+  width: 100%;
+  height: 134px;
   position: relative;
   display: inline-block;
-  margin: 0px 10px;
   	/*width:30%;
   	vertical-align:top;
   
   	background-color:$grey;
   	height:30px;*/
 }
-/* line 20, ../sass/content/_projects.scss */
-.projectContainer .project, .projectContainer .details {
+/* line 26, ../sass/content/_projects.scss */
+.projectImageContainer .projectImage, .projectImageContainer .details {
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 1;
 }
-/* line 27, ../sass/content/_projects.scss */
-.projectContainer .project {
+/* line 34, ../sass/content/_projects.scss */
+.projectImageContainer .details {
+  display: none;
   z-index: 10;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+/* line 38, ../sass/content/_projects.scss */
+.projectImageContainer .details .text {
+  margin-top: 16%;
+  color: #f2f2f2;
+}
+
+/* line 48, ../sass/content/_projects.scss */
+.projectImage:hover + .details {
+  display: block;
+}
+
+/* line 52, ../sass/content/_projects.scss */
+.details:hover {
+  display: block;
 }

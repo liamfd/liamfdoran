@@ -1,30 +1,54 @@
 .projectsRow{
 	width:100%;
 	text-align:center;
-	height:200px;
+	min-height:150px;
 	margin-top:10px
 }
-.projectContainer{
+.project{
+	display:inline-block;
 	width:30%;
-    height: 100px;
+	height:30px;
+	text-align:center;
+}
+
+.projectImageContainer{
+	width:100%;
+	height: 134px;
     position: relative;
 	display:inline-block;
-	
-	margin:0px 10px;
+
 	/*width:30%;
 	vertical-align:top;
 
 	background-color:$grey;
 	height:30px;*/
 
-	.project, .details{
+	.projectImage, .details{
 	    width: 100%;
 	    height: 100%;
 	    position: absolute;
 	    top: 0;
 	    left: 0;
+	    z-index:1;
 	}
-	.project {
+	.details {
+		display:none;
     	z-index: 10;
+    	background-color:rgba(0,0,0,.8);
+    	.text{
+    		margin-top: 16%;
+    		color:$white;
+    	//	font-size: 2em;
+    	//	font-family: bitter;
+    	//	color:$white;
+    	}
 	}
+}
+
+.projectImage:hover + .details{
+	display:block;
+}
+
+.details:hover{
+	display:block;
 }
