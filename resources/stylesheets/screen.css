@@ -66,3 +66,43 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
+
+/* line 1, ../sass/shared/_common.scss */
+body {
+  background-color: #002147;
+}
+
+/* line 5, ../sass/shared/_common.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "neovix basic";
+}
+
+/* line 9, ../sass/shared/_common.scss */
+p {
+  font-family: "arial";
+}
+
+/* line 1, ../sass/shared/_frame.scss */
+.centered {
+  width: 600px;
+  height: 400px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+/* line 15, ../sass/shared/_frame.scss */
+.frame {
+  background-color: #f2f2f2;
+  height: 300px;
+}
+
+/* line 20, ../sass/shared/_frame.scss */
+.name {
+  font-family: "neovix basic";
+  font-size: 3em;
+  color: #f2f2f2;
+}
