@@ -5,13 +5,21 @@ h2.title{
 .projectsRow{
 	width:100%;
 	text-align:center;
+	height:200px;
 }
 
 .project{
 	display:inline-block;
-	width:30%;
+	vertical-align:top;
+	width:32%;
 	margin-left:3px;
 	margin-right:3px;
 	background-color:$grey;
 	height:30px;
+}
+h3.title{
+
+}
+p.tools{
+
 }

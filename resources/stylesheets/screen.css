@@ -70,38 +70,50 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* line 1, ../sass/shared/_common.scss */
 body {
   background-color: #660000;
+  font-size: 62.5%;
 }
 
-/* line 5, ../sass/shared/_common.scss */
+/* line 6, ../sass/shared/_common.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Telegrafico", sans-serif;
 }
 
-/* line 8, ../sass/shared/_common.scss */
+/* line 9, ../sass/shared/_common.scss */
 h1 {
-  font-size: 50px;
+  font-size: 8em;
 }
 
-/* line 12, ../sass/shared/_common.scss */
+/* line 13, ../sass/shared/_common.scss */
 h2 {
-  font-size: 45px;
+  font-size: 6em;
 }
 
-/* line 16, ../sass/shared/_common.scss */
+/* line 17, ../sass/shared/_common.scss */
+h3 {
+  font-size: 1.8em;
+}
+
+/* line 21, ../sass/shared/_common.scss */
 p, a {
   font-family: "Bitter", serif;
+  font-size: 1.5em;
 }
 
-/* line 20, ../sass/shared/_common.scss */
+/* line 26, ../sass/shared/_common.scss */
 img {
   max-width: 100%;
 }
 
-/* line 24, ../sass/shared/_common.scss */
+/* line 30, ../sass/shared/_common.scss */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+/* line 34, ../sass/shared/_common.scss */
+strong {
+  font-weight: bold;
 }
 
 /* line 1, ../sass/shared/_frame.scss */
@@ -115,7 +127,7 @@ img {
   display: inline-block;
   background-color: #f2f2f2;
   border-radius: 3px;
-  max-width: 700px;
+  max-width: 800px;
   width: 100%;
 }
 
@@ -209,12 +221,14 @@ h2.title {
 .projectsRow {
   width: 100%;
   text-align: center;
+  height: 200px;
 }
 
-/* line 10, ../sass/content/_projects.scss */
+/* line 11, ../sass/content/_projects.scss */
 .project {
   display: inline-block;
-  width: 30%;
+  vertical-align: top;
+  width: 32%;
   margin-left: 3px;
   margin-right: 3px;
   background-color: gray;
