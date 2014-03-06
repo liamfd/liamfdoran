@@ -2,26 +2,15 @@
 .flexslider
 	.slides
 		li
-			.carWrapper
-				h2.title Me
-				.bioText
-					p.
-						I'm Liam Doran, and I'm a web developer. Or at least, I'm working on it. I'm currently
-						a student at Trinity College, Hartford, three months from finishing a BS in Computer Science.
-						I'm interested in backend, frontend, tools I have never tried, and employment.
-						I also write when I can, and perform in an improv comedy group.
-		li					
-			.carWrapper
-				h2.title Me
-				.bioText
-					p.
-						I like bananas.
+			include ./bio
+		li	
+			include ./projects
 		li
-			.carWrapper
-				h2.title Me
-				.bioText
-					p.
-						I like pie.
+			include ./contact
+.tester
+	li first
+	li second
+	li third
 
 
 
