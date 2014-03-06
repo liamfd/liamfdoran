@@ -13,6 +13,7 @@
 @import "utils/mixins";
 @import "utils/var";
 @import "utils/jquery.openCarousel.scss";
+@import "utils/flexslider";
 
 @import "shared/common";
 @import "shared/frame";
@@ -22,3 +23,4 @@
 @import "content/bio";
 @import "content/contact";
 @import "content/projects";
+@import "content/single";
