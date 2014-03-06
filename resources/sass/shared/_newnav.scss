@@ -1,0 +1,87 @@
+$triangleHeight:30px;
+
+
+
+.navContainer{
+	padding:10px;
+//	background-color:$white;
+	text-align:center;
+}
+
+.navBlock{
+	display:inline-block;
+//	width:25%;
+	//background-color:$white;
+	//height:$navHeight;
+}
+.navShapeBlock{
+	text-align: center;
+	width:100%;
+
+	border:5px solid $white;
+	//height:$navHeight;
+	//background-color:$red;
+	display:table;
+	table-layout: fixed;
+	margin-left:auto;
+	margin-right:auto
+}
+
+.triangleContainer{
+	display:table-cell;
+	position:relative;
+	width:$triangleHeight*4;
+	height:$triangleHeight;
+	.box{
+		display:inline-block;
+
+		position:absolute;
+		top:0;
+		left:0;
+		height:$triangleHeight;
+		width:$triangleHeight;
+		background-color:$white;
+	}
+
+	.leftBox{
+		@extend .box;
+		left:0;
+	}
+
+	.rightBox{
+		@extend .box;
+		left:$triangleHeight*3;
+	//	right:$triangleHeight*2;
+	}
+
+	.triangle{
+		display:inline-block;
+		position:absolute;
+
+		left:0;
+		z-index:2;
+	//	height:$triangleHeight;
+	//	width:$triangleHeight;
+		width: 0; 
+		height: 0; 
+	//	background-color:$white;
+		border-top: $triangleHeight solid $white;
+		border-left: $triangleHeight solid transparent;
+		border-right: $triangleHeight solid transparent;
+	}
+
+	.leftTriangle{
+		@extend .triangle;
+		left:0;
+	}
+	.rightTriangle{
+		@extend .triangle;
+		left:$triangleHeight*2;
+	}
+}
+
+.filler{
+	display:table-cell;
+	height:$triangleHeight;
+	background-color:$white;
+}

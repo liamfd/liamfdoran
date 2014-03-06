@@ -12,10 +12,12 @@
 
 @import "utils/mixins";
 @import "utils/var";
+@import "utils/jquery.openCarousel.scss";
 
 @import "shared/common";
 @import "shared/frame";
 @import "shared/nav";
+@import "shared/newnav";
 
 @import "content/bio";
 @import "content/contact";

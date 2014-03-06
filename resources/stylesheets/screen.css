@@ -67,6 +67,104 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
+/**************************************
+jQuery Open Carousel
+
+Copyright (c) 2013 Justin McCandless (justinmccandless.com)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+***************************************/
+/*
+This is the necessary css for Open Carousel
+Include jquery.openCarousel.js and jquery.openCarousel.css in your projects
+*/
+/* line 17, ../sass/utils/_jquery.openCarousel.scss */
+.ocarousel {
+  display: none;
+}
+
+/* line 20, ../sass/utils/_jquery.openCarousel.scss */
+.ocarousel_window {
+  overflow: hidden;
+  white-space: nowrap;
+  /* default size */
+  width: 100%;
+  height: 200px;
+}
+
+/* line 27, ../sass/utils/_jquery.openCarousel.scss */
+.ocarousel_window_slides {
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+  width: 50000px;
+  white-space: nowrap;
+}
+
+/* IE6 Hack instead of >* child selector */
+/* line 35, ../sass/utils/_jquery.openCarousel.scss */
+.ocarousel_window_slides * {
+  float: left;
+  white-space: normal;
+}
+
+/* line 39, ../sass/utils/_jquery.openCarousel.scss */
+.ocarousel_window_slides * * {
+  float: none;
+}
+
+/* line 42, ../sass/utils/_jquery.openCarousel.scss */
+.ocarousel_window_slides_vertical {
+  float: none;
+  white-space: normal;
+  display: block;
+}
+
+/* line 47, ../sass/utils/_jquery.openCarousel.scss */
+.ocarousel_indicators {
+  width: 100%;
+}
+
+/* line 50, ../sass/utils/_jquery.openCarousel.scss */
+.ocarousel_indicators svg {
+  height: 50px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* line 55, ../sass/utils/_jquery.openCarousel.scss */
+.ocarousel_indicators svg circle {
+  cursor: pointer;
+}
+
+/* Fallback indicators for no SVG support */
+/* line 60, ../sass/utils/_jquery.openCarousel.scss */
+.ocarousel_indicator {
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  margin: 0 1px;
+  overflow: hidden;
+  cursor: pointer;
+  /* IE 8< inline-block fix */
+  *display: inline;
+  zoom: 1;
+}
+
+/* line 72, ../sass/utils/_jquery.openCarousel.scss */
+.ocarousel_indicator_active {
+  background: url("../images/indicatorsSVGFallback.gif") 0 0;
+}
+
+/* line 75, ../sass/utils/_jquery.openCarousel.scss */
+.ocarousel_indicator_inactive {
+  background: url("../images/indicatorsSVGFallback.gif") -16px 0;
+}
+
 /* line 1, ../sass/shared/_common.scss */
 body {
   background-color: #660000;
@@ -83,51 +181,71 @@ h1 {
   font-size: 8em;
 }
 
-/* line 13, ../sass/shared/_common.scss */
+/* line 14, ../sass/shared/_common.scss */
 h2 {
   font-size: 6em;
 }
 
-/* line 17, ../sass/shared/_common.scss */
+/* line 18, ../sass/shared/_common.scss */
 h3 {
   font-size: 1.8em;
 }
 
-/* line 21, ../sass/shared/_common.scss */
+/* line 22, ../sass/shared/_common.scss */
 p, a {
   font-family: "Bitter", serif;
   font-size: 1.5em;
 }
 
-/* line 26, ../sass/shared/_common.scss */
+/* line 27, ../sass/shared/_common.scss */
 img {
   max-width: 100%;
 }
 
-/* line 30, ../sass/shared/_common.scss */
+/* line 31, ../sass/shared/_common.scss */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 34, ../sass/shared/_common.scss */
+/* line 35, ../sass/shared/_common.scss */
 strong {
   font-weight: bold;
 }
 
-/* line 38, ../sass/shared/_common.scss */
+/* line 39, ../sass/shared/_common.scss */
 h2.title {
-  color: #660000;
+  color: #001030;
 }
 
 /* line 1, ../sass/shared/_frame.scss */
+.blueDiv {
+  background-color: gray;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+/* line 11, ../sass/shared/_frame.scss */
+#color, #red, #green, #blue {
+  margin: 20px;
+  display: inline-block;
+  background-color: gray;
+  width: 50px;
+  height: 20px;
+}
+
+/* line 22, ../sass/shared/_frame.scss */
 .centered {
   margin-top: 15%;
   text-align: center;
 }
 
-/* line 11, ../sass/shared/_frame.scss */
+/* line 32, ../sass/shared/_frame.scss */
 .frame {
   display: inline-block;
   background-color: #f2f2f2;
@@ -136,23 +254,23 @@ h2.title {
   width: 100%;
 }
 
-/* line 19, ../sass/shared/_frame.scss */
+/* line 40, ../sass/shared/_frame.scss */
 h1.name {
   letter-spacing: 3px;
   color: #f2f2f2;
 }
 
-/* line 24, ../sass/shared/_frame.scss */
+/* line 45, ../sass/shared/_frame.scss */
 .container {
   padding: 10px;
 }
 
-/* line 28, ../sass/shared/_frame.scss */
+/* line 49, ../sass/shared/_frame.scss */
 a.email {
   display: inline-block;
   text-decoration: none;
   margin-top: 20px;
-  color: #660000;
+  color: #001030;
   font-size: 20px;
 }
 
@@ -177,30 +295,111 @@ nav {
   margin-top: 8px;
 }
 /* line 21, ../sass/shared/_nav.scss */
-.navEleWrapper .triangle {
+.navEleWrapper .triangle, .navEleWrapper .triangleContainer .leftTriangle, .triangleContainer .navEleWrapper .leftTriangle, .navEleWrapper .triangleContainer .rightTriangle, .triangleContainer .navEleWrapper .rightTriangle {
   display: inline-block;
   width: 0;
   height: 0;
   border-left: 30px solid transparent;
   border-right: 30px solid transparent;
-  border-bottom: 30px solid #660000;
+  border-bottom: 30px solid #001030;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  /* IE10 is actually unprefixed */
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
-/* line 39, ../sass/shared/_nav.scss */
-.triangle:hover {
+/* line 45, ../sass/shared/_nav.scss */
+.triangle:hover, .triangleContainer .leftTriangle:hover, .triangleContainer .rightTriangle:hover {
   border-left: 30px solid transparent;
   border-right: 30px solid transparent;
   border-bottom: 0px solid transparent;
-  border-top: 30px solid #660000;
+  border-top: 30px solid #001030;
 }
 
 /*
 .navBlock:hover{
-	background-color:$red;
+	background-color:$primary;
 	.navCircle{
 		background-color:$white;
 	}
 }*/
+/* line 5, ../sass/shared/_newnav.scss */
+.navContainer {
+  padding: 10px;
+  text-align: center;
+}
+
+/* line 11, ../sass/shared/_newnav.scss */
+.navBlock {
+  display: inline-block;
+}
+
+/* line 17, ../sass/shared/_newnav.scss */
+.navShapeBlock {
+  text-align: center;
+  width: 100%;
+  border: 5px solid #f2f2f2;
+  display: table;
+  table-layout: fixed;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 30, ../sass/shared/_newnav.scss */
+.triangleContainer {
+  display: table-cell;
+  position: relative;
+  width: 120px;
+  height: 30px;
+}
+/* line 35, ../sass/shared/_newnav.scss */
+.triangleContainer .box, .triangleContainer .leftBox, .triangleContainer .rightBox {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 30px;
+  width: 30px;
+  background-color: #f2f2f2;
+}
+/* line 46, ../sass/shared/_newnav.scss */
+.triangleContainer .leftBox {
+  left: 0;
+}
+/* line 51, ../sass/shared/_newnav.scss */
+.triangleContainer .rightBox {
+  left: 90px;
+}
+/* line 57, ../sass/shared/_newnav.scss */
+.triangleContainer .triangle, .triangleContainer .leftTriangle, .triangleContainer .rightTriangle {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  z-index: 2;
+  width: 0;
+  height: 0;
+  border-top: 30px solid #f2f2f2;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+}
+/* line 73, ../sass/shared/_newnav.scss */
+.triangleContainer .leftTriangle {
+  left: 0;
+}
+/* line 77, ../sass/shared/_newnav.scss */
+.triangleContainer .rightTriangle {
+  left: 60px;
+}
+
+/* line 83, ../sass/shared/_newnav.scss */
+.filler {
+  display: table-cell;
+  height: 30px;
+  background-color: #f2f2f2;
+}
+
 /* line 1, ../sass/content/_bio.scss */
 .bioText {
   padding-top: 10px;
@@ -211,19 +410,25 @@ nav {
   color: gray;
 }
 
+/* line 9, ../sass/content/_bio.scss */
+.bioWrapper {
+  width: 800px;
+}
+
 /* line 1, ../sass/content/_contact.scss */
 .skillsContainer {
   display: inline-block;
   text-align: left;
   max-width: 600px;
+  color: gray;
 }
 
-/* line 7, ../sass/content/_contact.scss */
+/* line 8, ../sass/content/_contact.scss */
 .area {
   margin: 10px 0px;
 }
 
-/* line 1, ../sass/content/_projects.scss */
+/* line 2, ../sass/content/_projects.scss */
 .projectsRow {
   width: 100%;
   text-align: center;
@@ -231,7 +436,7 @@ nav {
   margin-top: 10px;
 }
 
-/* line 7, ../sass/content/_projects.scss */
+/* line 8, ../sass/content/_projects.scss */
 .project {
   display: inline-block;
   width: 30%;
@@ -239,7 +444,7 @@ nav {
   text-align: center;
 }
 
-/* line 14, ../sass/content/_projects.scss */
+/* line 16, ../sass/content/_projects.scss */
 .projectImageContainer {
   width: 100%;
   height: 134px;
@@ -251,33 +456,98 @@ nav {
   	background-color:$grey;
   	height:30px;*/
 }
-/* line 26, ../sass/content/_projects.scss */
+/* line 29, ../sass/content/_projects.scss */
 .projectImageContainer .projectImage, .projectImageContainer .details {
   width: 100%;
-  height: 100%;
+  height: 133px;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
 }
-/* line 34, ../sass/content/_projects.scss */
+/* line 38, ../sass/content/_projects.scss */
 .projectImageContainer .details {
   display: none;
   z-index: 10;
   background-color: rgba(0, 0, 0, 0.8);
 }
-/* line 38, ../sass/content/_projects.scss */
+/* line 42, ../sass/content/_projects.scss */
 .projectImageContainer .details .text {
   margin-top: 16%;
   color: #f2f2f2;
 }
-
+/* line 45, ../sass/content/_projects.scss */
+.projectImageContainer .details .text .role, .projectImageContainer .details .text .tools {
+  font-size: 1.5em;
+}
 /* line 48, ../sass/content/_projects.scss */
-.projectImage:hover + .details {
-  display: block;
+.projectImageContainer .details .text .tools {
+  font-size: 1em;
+}
+/* line 56, ../sass/content/_projects.scss */
+.projectImageContainer .projectImage {
+  text-align: center;
+}
+/* line 58, ../sass/content/_projects.scss */
+.projectImageContainer .projectImage img {
+  display: inline-block;
 }
 
-/* line 52, ../sass/content/_projects.scss */
-.details:hover {
-  display: block;
+@media only screen and (min-device-width: 800px), only screen and (min-width: 800px) {
+  /* line 66, ../sass/content/_projects.scss */
+  .projectImage:hover + .details, .details:hover {
+    display: block;
+  }
+}
+@media only screen and (max-device-width: 800px), only screen and (max-width: 800px) {
+  /* line 72, ../sass/content/_projects.scss */
+  .project {
+    width: 100%;
+    min-height: 120px;
+    text-align: left;
+  }
+
+  /* line 77, ../sass/content/_projects.scss */
+  a.projectImageContainer {
+    width: 100%;
+    display: inline-block;
+    position: static;
+    text-align: center;
+    min-height: 100px;
+  }
+  /* line 84, ../sass/content/_projects.scss */
+  a.projectImageContainer .projectImage, a.projectImageContainer .details {
+    height: 100px;
+    position: static;
+    display: inline-block;
+    vertical-align: top;
+  }
+  /* line 90, ../sass/content/_projects.scss */
+  a.projectImageContainer .details {
+    background-color: #f2f2f2;
+    width: 60%;
+  }
+  /* line 93, ../sass/content/_projects.scss */
+  a.projectImageContainer .details .text {
+    margin-top: 0%;
+  }
+  /* line 95, ../sass/content/_projects.scss */
+  a.projectImageContainer .details .text .role, a.projectImageContainer .details .text .tools {
+    font-size: 4em;
+    color: #001030;
+  }
+  /* line 101, ../sass/content/_projects.scss */
+  a.projectImageContainer .projectImage {
+    width: 40%;
+  }
+
+  /* line 105, ../sass/content/_projects.scss */
+  .projectImage:hover + .details, .details:hover {
+    display: inline-block;
+  }
+
+  /* line 109, ../sass/content/_projects.scss */
+  img {
+    max-height: 100%;
+  }
 }

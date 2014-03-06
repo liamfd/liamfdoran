@@ -1,8 +1,9 @@
+$rowHeight: 150px;
 .projectsRow{
 	width:100%;
 	text-align:center;
-	min-height:150px;
-	margin-top:10px
+	min-height:$rowHeight;
+	margin-top:10px;
 }
 .project{
 	display:inline-block;
@@ -11,11 +12,13 @@
 	text-align:center;
 }
 
+$containerHeight:134px;
 .projectImageContainer{
 	width:100%;
-	height: 134px;
-    position: relative;
+	height:$containerHeight; //ugly little solution that works b/c of my image res
+    position:relative;
 	display:inline-block;
+	//overflow:hidden;
 
 	/*width:30%;
 	vertical-align:top;
@@ -25,12 +28,13 @@
 
 	.projectImage, .details{
 	    width: 100%;
-	    height: 100%;
+	    height: $containerHeight - 1;
 	    position: absolute;
 	    top: 0;
 	    left: 0;
 	    z-index:1;
 	}
+
 	.details {
 		display:none;
     	z-index: 10;
@@ -38,17 +42,72 @@
     	.text{
     		margin-top: 16%;
     		color:$white;
+			.role, .tools{
+				font-size: 1.5em;
+			}
+			.tools{
+				font-size: 1em;
+			}
     	//	font-size: 2em;
     	//	font-family: bitter;
     	//	color:$white;
     	}
 	}
+	.projectImage{
+	    text-align: center;
+	    img{
+	    	display: inline-block;
+	    }
+	}
+
 }
 
-.projectImage:hover + .details{
-	display:block;
+@media only screen and (min-device-width: 800px), only screen and (min-width: 800px){
+	.projectImage:hover + .details, .details:hover{
+		display:block;
+	}
 }
 
-.details:hover{
-	display:block;
+@media only screen and (max-device-width: 800px), only screen and (max-width: 800px){
+	.project{
+		width:100%;
+		min-height:120px;
+		text-align:left;
+	}
+	a.projectImageContainer{
+		width:100%;
+		display:inline-block;
+		//height:150px;
+		position:static;
+		text-align:center;
+		min-height:100px;
+		.projectImage, .details{
+			height:100px;
+			position: static;
+			display:inline-block;
+			vertical-align: top;
+		}
+		.details{
+			background-color:$white;
+			width:60%;
+			.text{
+				margin-top:0%;
+				.role, .tools{
+					font-size: 4em;
+					color:$primary;
+				}
+			}
+		}
+		.projectImage{
+			width:40%;
+		}
+	}
+	.projectImage:hover + .details, .details:hover{
+		display:inline-block;
+	}
+
+	img{
+		max-height:100%;
+	}
+
 }

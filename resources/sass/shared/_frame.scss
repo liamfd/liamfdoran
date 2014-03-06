@@ -1,3 +1,24 @@
+.blueDiv{
+    background-color:$grey;
+    width:50%;
+    height:100%;
+    top:0;
+    left:0;
+    position: absolute;
+    z-index: -1;
+}
+
+#color {
+    margin: 20px;
+    display:inline-block;
+    background-color:$grey;
+    width:50px;
+    height:20px;
+}
+
+#red, #green, #blue {
+    @extend #color;
+}
 .centered {
    // width: 600px;
    // height: 400px;
@@ -29,6 +50,11 @@ a.email{
     display:inline-block;
     text-decoration: none;
     margin-top: 20px;
-    color: $red; //make this rustier
+    color: $primary; //make this rustier
     font-size: 20px;
+}
+
+
+@media only screen and (max-device-width: 600px), only screen and (max-width: 600px){
+    
 }

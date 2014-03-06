@@ -26,7 +26,13 @@ $triangleHeight: 30px; //really a width too
 		border-left: $triangleHeight solid transparent;
 		border-right: $triangleHeight solid transparent;
 		
-		border-bottom: $triangleHeight solid $red;
+		border-bottom: $triangleHeight solid $primary;
+
+		-webkit-transition: all 0.3s ease-out;
+		-moz-transition: all 0.3s ease-out;
+		-ms-transition: all 0.3s ease-out; /* IE10 is actually unprefixed */
+		-o-transition: all 0.3s ease-out;
+		transition: all 0.3s ease-out;
 		//border-radius:10000px;
 		//width:$circleDiameter;
 		//height:$circleDiameter;
@@ -40,9 +46,10 @@ $triangleHeight: 30px; //really a width too
 	border-left: $triangleHeight solid transparent;
 	border-right: $triangleHeight solid transparent;
 	border-bottom:0px solid transparent;
-	border-top: $triangleHeight solid $red;
-	
+	border-top: $triangleHeight solid $primary;
 }
+
+
 
 /*
 $circleDiameter: 40px;
@@ -53,7 +60,7 @@ $circleDiameter: 40px;
 	.navCircle{
 		display:inline-block;
 		vertical-align:bottom;
-		background-color:$red;
+		background-color:$primary;
 		border-radius:10000px;
 		width:$circleDiameter;
 		height:$circleDiameter;
@@ -67,7 +74,7 @@ $circleSmallerDiameter: $circleDiameter - $circleBorder*2;
 
 .navCircle:hover{
 	background-color:$white;
-	border: $circleBorder solid $red;
+	border: $circleBorder solid $primary;
 	width:$circleSmallerDiameter;
 	height:$circleSmallerDiameter;
 }
@@ -75,7 +82,7 @@ $circleSmallerDiameter: $circleDiameter - $circleBorder*2;
 */
 /*
 .navBlock:hover{
-	background-color:$red;
+	background-color:$primary;
 	.navCircle{
 		background-color:$white;
 	}
