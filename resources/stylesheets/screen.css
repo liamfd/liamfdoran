@@ -573,55 +573,56 @@ h2.title {
 
 /* line 12, ../sass/shared/_frame.scss */
 #background-slider {
+  background-color: gray;
   display: block;
-  position: relative;
+  position: absolute;
   top: 0px;
   left: 0px;
   height: 100%;
-  width: 500px;
+  overflow: hidden !important;
+  width: 100%;
   z-index: -1;
-  border: 4px solid gray;
+  border-width: 0px;
 }
-/* line 24, ../sass/shared/_frame.scss */
+/* line 25, ../sass/shared/_frame.scss */
 #background-slider .slides {
-  position: absolute;
-  height: 100%;
+  position: relative;
+  height: 10000px;
   width: 100%;
   background-color: #0b0b0b;
 }
-/* line 29, ../sass/shared/_frame.scss */
+/* line 32, ../sass/shared/_frame.scss */
 #background-slider .slides li {
   position: relative;
   height: 100%;
   width: 100%;
 }
-/* line 34, ../sass/shared/_frame.scss */
+/* line 37, ../sass/shared/_frame.scss */
 #background-slider .slides li .color-container, #background-slider .slides li .red, #background-slider .slides li .green, #background-slider .slides li .blue {
   position: relative;
   min-height: 100%;
   min-width: 100%;
-  margin: 0 auto;
 }
-/* line 41, ../sass/shared/_frame.scss */
+/* line 44, ../sass/shared/_frame.scss */
 #background-slider .slides li .red {
   background-color: #330033;
 }
-/* line 45, ../sass/shared/_frame.scss */
+/* line 48, ../sass/shared/_frame.scss */
 #background-slider .slides li .green {
   background-color: #004400;
 }
-/* line 49, ../sass/shared/_frame.scss */
+/* line 52, ../sass/shared/_frame.scss */
 #background-slider .slides li .blue {
   background-color: #000033;
 }
 
-/* line 57, ../sass/shared/_frame.scss */
+/* line 60, ../sass/shared/_frame.scss */
 .centered {
   margin-top: 15%;
   text-align: center;
 }
 
-/* line 67, ../sass/shared/_frame.scss */
+/* line 70, ../sass/shared/_frame.scss */
 .frame {
   display: inline-block;
   background-color: #f2f2f2;
@@ -631,18 +632,18 @@ h2.title {
   z-index: 10;
 }
 
-/* line 76, ../sass/shared/_frame.scss */
+/* line 79, ../sass/shared/_frame.scss */
 h1.name {
   letter-spacing: 3px;
   color: #f2f2f2;
 }
 
-/* line 81, ../sass/shared/_frame.scss */
+/* line 84, ../sass/shared/_frame.scss */
 .container {
   padding: 10px;
 }
 
-/* line 85, ../sass/shared/_frame.scss */
+/* line 88, ../sass/shared/_frame.scss */
 a.email {
   display: inline-block;
   text-decoration: none;
@@ -672,7 +673,7 @@ nav {
   margin-top: 8px;
 }
 /* line 21, ../sass/shared/_nav.scss */
-.navEleWrapper .triangle, .navEleWrapper .triangleContainer .leftTriangle, .triangleContainer .navEleWrapper .leftTriangle, .navEleWrapper .triangleContainer .rightTriangle, .triangleContainer .navEleWrapper .rightTriangle {
+.navEleWrapper .triangle, .navEleWrapper .triangleContainer .leftTriangle, .triangleContainer .navEleWrapper .leftTriangle, .navEleWrapper .triangleContainer .rightTriangle, .triangleContainer .navEleWrapper .rightTriangle, .navEleWrapper .triangleContainer .midTriangle, .triangleContainer .navEleWrapper .midTriangle {
   display: inline-block;
   width: 0;
   height: 0;
@@ -687,15 +688,10 @@ nav {
   transition: all 0.3s ease-out;
 }
 
-/* line 45, ../sass/shared/_nav.scss */
-.triangle:hover, .triangleContainer .leftTriangle:hover, .triangleContainer .rightTriangle:hover {
-  border-bottom: 30px solid rgba(0, 0, 0, 0.7);
-  /*border-left: $triangleHeight solid transparent;
-  border-right: $triangleHeight solid transparent;
-  border-bottom:0px solid transparent;
-  border-top: $triangleHeight solid $primary;*/
-}
-
+/*border-left: $triangleHeight solid transparent;
+border-right: $triangleHeight solid transparent;
+border-bottom:0px solid transparent;
+border-top: $triangleHeight solid $primary;*/
 /*
 .navBlock:hover{
 	background-color:$primary;
@@ -735,43 +731,50 @@ nav {
 /* line 35, ../sass/shared/_newnav.scss */
 .triangleContainer .box, .triangleContainer .leftBox, .triangleContainer .rightBox {
   display: inline-block;
+  z-index: 1;
   position: absolute;
   top: 0;
   left: 0;
   height: 30px;
   width: 30px;
-  background-color: #f2f2f2;
+  background-color: gray;
 }
-/* line 46, ../sass/shared/_newnav.scss */
+/* line 47, ../sass/shared/_newnav.scss */
 .triangleContainer .leftBox {
   left: 0;
 }
-/* line 51, ../sass/shared/_newnav.scss */
+/* line 52, ../sass/shared/_newnav.scss */
 .triangleContainer .rightBox {
   left: 90px;
 }
-/* line 57, ../sass/shared/_newnav.scss */
-.triangleContainer .triangle, .triangleContainer .leftTriangle, .triangleContainer .rightTriangle {
+/* line 58, ../sass/shared/_newnav.scss */
+.triangleContainer .triangle, .triangleContainer .leftTriangle, .triangleContainer .rightTriangle, .triangleContainer .midTriangle {
   display: inline-block;
   position: absolute;
   left: 0;
   z-index: 2;
   width: 0;
   height: 0;
-  border-top: 30px solid #f2f2f2;
+  border-top: 30px solid #660000;
   border-left: 30px solid transparent;
   border-right: 30px solid transparent;
 }
-/* line 73, ../sass/shared/_newnav.scss */
+/* line 74, ../sass/shared/_newnav.scss */
 .triangleContainer .leftTriangle {
   left: 0;
 }
-/* line 77, ../sass/shared/_newnav.scss */
+/* line 78, ../sass/shared/_newnav.scss */
 .triangleContainer .rightTriangle {
   left: 60px;
 }
+/* line 82, ../sass/shared/_newnav.scss */
+.triangleContainer .midTriangle {
+  left: 30px;
+  border-top: 0 solid transparent;
+  border-bottom: 30px solid #0b0b0b;
+}
 
-/* line 83, ../sass/shared/_newnav.scss */
+/* line 92, ../sass/shared/_newnav.scss */
 .filler {
   display: table-cell;
   height: 30px;

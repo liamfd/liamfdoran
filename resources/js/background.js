@@ -19,10 +19,21 @@ function checkWindowWidth(){
 }
 
 $(window).load(function() {
-    $(".flexslider").flexslider({
+	$("#content-slider").flexslider({
         animation: "slide",
-       // directionNav: false,
+        directionNav: false,
+        animationDuration:2,
         controlsContainer: ".nav",
-        manualControls: "nav .navBlock"
+        manualControls: "nav .navBlock",
+        asNavFor:'#background-slider',
+        slideshow:false
     });
+    $("#background-slider").flexslider({
+        sync:"#content-slider",
+        animationDuration:2,
+        controlNav:false,
+        directionNav: false,
+        slideshow: false
+    });
+
 });

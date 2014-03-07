@@ -34,13 +34,14 @@ $triangleHeight:30px;
 	height:$triangleHeight;
 	.box{
 		display:inline-block;
-
+		z-index:1;
 		position:absolute;
 		top:0;
 		left:0;
 		height:$triangleHeight;
 		width:$triangleHeight;
-		background-color:$white;
+		background-color:$grey;
+
 	}
 
 	.leftBox{
@@ -65,7 +66,7 @@ $triangleHeight:30px;
 		width: 0; 
 		height: 0; 
 	//	background-color:$white;
-		border-top: $triangleHeight solid $white;
+		border-top: $triangleHeight solid $red;
 		border-left: $triangleHeight solid transparent;
 		border-right: $triangleHeight solid transparent;
 	}
@@ -77,6 +78,14 @@ $triangleHeight:30px;
 	.rightTriangle{
 		@extend .triangle;
 		left:$triangleHeight*2;
+	}
+	.midTriangle{
+		@extend .triangle;
+		//background-color:#339900;
+		//top:-$triangleHeight;
+		left:$triangleHeight;
+		border-top: 0 solid transparent;
+		border-bottom: $triangleHeight solid $black;
 	}
 }
 
