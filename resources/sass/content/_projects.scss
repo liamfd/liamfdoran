@@ -1,4 +1,9 @@
 $rowHeight: 150px;
+$containerHeight:134px;
+
+h2.projectsTitle{
+	color:$secondary;
+}
 .projectsRow{
 	width:100%;
 	text-align:center;
@@ -12,7 +17,6 @@ $rowHeight: 150px;
 	text-align:center;
 }
 
-$containerHeight:134px;
 .projectImageContainer{
 	width:100%;
 	height:$containerHeight; //ugly little solution that works b/c of my image res
@@ -93,7 +97,7 @@ $containerHeight:134px;
 			.text{
 				margin-top:0%;
 				.role, .tools{
-					color:$primary;
+					color:$secondary;
 				}
 			}
 		}

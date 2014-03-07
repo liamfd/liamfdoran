@@ -11,6 +11,7 @@
     width:100%;
     z-index:-1;
     border-width:0px;
+    margin-bottom:0px;
     .slides{
         position:relative;
 
@@ -19,7 +20,7 @@
         width:100%;
         background-color:$black;
         li{   
-           position: relative;
+            position: relative;
             height:100%;
             width:100%;
 
@@ -29,18 +30,6 @@
                 min-width:100%;
              //   max-width:10000%!important;
               //  margin: 0 auto;
-            }
-            .red{
-                @extend .color-container;
-                background-color:#330033;
-            }
-            .green{
-                @extend .color-container;
-                background-color:#004400;
-            }
-            .blue{
-                @extend .color-container;
-                background-color:#000033;
             }
         }
     }

@@ -37,6 +37,15 @@ img {
  	font-weight: bold;
  }
 
- h2.title{
-	color:$primary;
+.primary{
+    @extend .color-container;
+    background-color:$primary;
+}
+.secondary{
+    @extend .color-container;
+    background-color:$secondary;
+}
+.tertiary{
+    @extend .color-container;
+    background-color:$tertiary;
 }

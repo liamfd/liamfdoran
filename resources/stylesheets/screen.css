@@ -556,8 +556,18 @@ strong {
 }
 
 /* line 40, ../sass/shared/_common.scss */
-h2.title {
-  color: #001030;
+.primary {
+  background-color: #660000;
+}
+
+/* line 44, ../sass/shared/_common.scss */
+.secondary {
+  background-color: #001030;
+}
+
+/* line 48, ../sass/shared/_common.scss */
+.tertiary {
+  background-color: #004400;
 }
 
 /* line 1, ../sass/shared/_frame.scss */
@@ -572,46 +582,35 @@ h2.title {
   width: 100%;
   z-index: -1;
   border-width: 0px;
+  margin-bottom: 0px;
 }
-/* line 14, ../sass/shared/_frame.scss */
+/* line 15, ../sass/shared/_frame.scss */
 #background-slider .slides {
   position: relative;
   height: 10000px;
   width: 100%;
   background-color: #0b0b0b;
 }
-/* line 21, ../sass/shared/_frame.scss */
+/* line 22, ../sass/shared/_frame.scss */
 #background-slider .slides li {
   position: relative;
   height: 100%;
   width: 100%;
 }
-/* line 26, ../sass/shared/_frame.scss */
-#background-slider .slides li .color-container, #background-slider .slides li .red, #background-slider .slides li .green, #background-slider .slides li .blue {
+/* line 27, ../sass/shared/_frame.scss */
+#background-slider .slides li .color-container, #background-slider .slides li .primary, #background-slider .slides li .secondary, #background-slider .slides li .tertiary {
   position: relative;
   min-height: 100%;
   min-width: 100%;
 }
-/* line 33, ../sass/shared/_frame.scss */
-#background-slider .slides li .red {
-  background-color: #330033;
-}
-/* line 37, ../sass/shared/_frame.scss */
-#background-slider .slides li .green {
-  background-color: #004400;
-}
-/* line 41, ../sass/shared/_frame.scss */
-#background-slider .slides li .blue {
-  background-color: #000033;
-}
 
-/* line 49, ../sass/shared/_frame.scss */
+/* line 38, ../sass/shared/_frame.scss */
 .centered {
   margin-top: 15%;
   text-align: center;
 }
 
-/* line 53, ../sass/shared/_frame.scss */
+/* line 42, ../sass/shared/_frame.scss */
 .frameWrapper {
   display: inline-block;
   max-width: 800px;
@@ -619,30 +618,30 @@ h2.title {
   z-index: 10;
 }
 
-/* line 62, ../sass/shared/_frame.scss */
+/* line 51, ../sass/shared/_frame.scss */
 .frame {
   display: inline-block;
   background-color: #f2f2f2;
   width: 100%;
 }
 
-/* line 69, ../sass/shared/_frame.scss */
+/* line 58, ../sass/shared/_frame.scss */
 h1.name {
   letter-spacing: 3px;
   color: #f2f2f2;
 }
 
-/* line 74, ../sass/shared/_frame.scss */
+/* line 63, ../sass/shared/_frame.scss */
 .container {
   padding: 10px;
 }
 
-/* line 78, ../sass/shared/_frame.scss */
+/* line 67, ../sass/shared/_frame.scss */
 a.email {
   display: inline-block;
   text-decoration: none;
   margin-top: 20px;
-  color: #001030;
+  color: #660000;
   font-size: 20px;
 }
 
@@ -776,34 +775,31 @@ nav {
 }
 
 /* line 1, ../sass/content/_bio.scss */
+h2.aboutTitle {
+  color: #660000;
+}
+
+/* line 5, ../sass/content/_bio.scss */
 .bioText {
   padding-top: 10px;
   line-height: 20px;
 }
-/* line 4, ../sass/content/_bio.scss */
+/* line 8, ../sass/content/_bio.scss */
 .bioText p {
   color: gray;
 }
 
-/* line 9, ../sass/content/_bio.scss */
+/* line 13, ../sass/content/_bio.scss */
 .bioWrapper {
   width: 100%;
 }
 
-/* line 1, ../sass/content/_contact.scss */
-.skillsContainer {
-  display: inline-block;
-  text-align: left;
-  max-width: 600px;
-  color: gray;
+/* line 4, ../sass/content/_projects.scss */
+h2.projectsTitle {
+  color: #001030;
 }
 
-/* line 8, ../sass/content/_contact.scss */
-.area {
-  margin: 10px 0px;
-}
-
-/* line 2, ../sass/content/_projects.scss */
+/* line 7, ../sass/content/_projects.scss */
 .projectsRow {
   width: 100%;
   text-align: center;
@@ -811,7 +807,7 @@ nav {
   margin-top: 10px;
 }
 
-/* line 8, ../sass/content/_projects.scss */
+/* line 13, ../sass/content/_projects.scss */
 .project {
   display: inline-block;
   width: 30%;
@@ -819,7 +815,7 @@ nav {
   text-align: center;
 }
 
-/* line 16, ../sass/content/_projects.scss */
+/* line 20, ../sass/content/_projects.scss */
 .projectImageContainer {
   width: 100%;
   height: 134px;
@@ -831,7 +827,7 @@ nav {
   	background-color:$grey;
   	height:30px;*/
 }
-/* line 29, ../sass/content/_projects.scss */
+/* line 33, ../sass/content/_projects.scss */
 .projectImageContainer .projectImage, .projectImageContainer .details {
   width: 100%;
   height: 133px;
@@ -840,49 +836,49 @@ nav {
   left: 0;
   z-index: 1;
 }
-/* line 38, ../sass/content/_projects.scss */
+/* line 42, ../sass/content/_projects.scss */
 .projectImageContainer .details {
   display: none;
   z-index: 10;
   background-color: rgba(0, 0, 0, 0.8);
 }
-/* line 42, ../sass/content/_projects.scss */
+/* line 46, ../sass/content/_projects.scss */
 .projectImageContainer .details .text {
   margin-top: 16%;
   color: #f2f2f2;
 }
-/* line 45, ../sass/content/_projects.scss */
+/* line 49, ../sass/content/_projects.scss */
 .projectImageContainer .details .text .role, .projectImageContainer .details .text .tools {
   font-size: 1.5em;
 }
-/* line 48, ../sass/content/_projects.scss */
+/* line 52, ../sass/content/_projects.scss */
 .projectImageContainer .details .text .tools {
   font-size: 1em;
 }
-/* line 56, ../sass/content/_projects.scss */
+/* line 60, ../sass/content/_projects.scss */
 .projectImageContainer .projectImage {
   text-align: center;
 }
-/* line 58, ../sass/content/_projects.scss */
+/* line 62, ../sass/content/_projects.scss */
 .projectImageContainer .projectImage img {
   display: inline-block;
 }
 
 @media only screen and (min-device-width: 800px), only screen and (min-width: 800px) {
-  /* line 66, ../sass/content/_projects.scss */
+  /* line 70, ../sass/content/_projects.scss */
   .projectImage:hover + .details, .details:hover {
     display: block;
   }
 }
 @media only screen and (max-device-width: 800px), only screen and (max-width: 800px) {
-  /* line 72, ../sass/content/_projects.scss */
+  /* line 76, ../sass/content/_projects.scss */
   .project {
     width: 100%;
     min-height: 120px;
     text-align: left;
   }
 
-  /* line 77, ../sass/content/_projects.scss */
+  /* line 81, ../sass/content/_projects.scss */
   a.projectImageContainer {
     width: 100%;
     display: inline-block;
@@ -890,41 +886,59 @@ nav {
     text-align: center;
     min-height: 100px;
   }
-  /* line 84, ../sass/content/_projects.scss */
+  /* line 88, ../sass/content/_projects.scss */
   a.projectImageContainer .projectImage, a.projectImageContainer .details {
     height: 100px;
     position: static;
     display: inline-block;
     vertical-align: top;
   }
-  /* line 90, ../sass/content/_projects.scss */
+  /* line 94, ../sass/content/_projects.scss */
   a.projectImageContainer .details {
     background-color: #f2f2f2;
     width: 60%;
   }
-  /* line 93, ../sass/content/_projects.scss */
+  /* line 97, ../sass/content/_projects.scss */
   a.projectImageContainer .details .text {
     margin-top: 0%;
   }
-  /* line 95, ../sass/content/_projects.scss */
+  /* line 99, ../sass/content/_projects.scss */
   a.projectImageContainer .details .text .role, a.projectImageContainer .details .text .tools {
     color: #001030;
   }
-  /* line 100, ../sass/content/_projects.scss */
+  /* line 104, ../sass/content/_projects.scss */
   a.projectImageContainer .projectImage {
     width: 40%;
   }
 
-  /* line 104, ../sass/content/_projects.scss */
+  /* line 108, ../sass/content/_projects.scss */
   .projectImage:hover + .details, .details:hover {
     display: inline-block;
   }
 
-  /* line 108, ../sass/content/_projects.scss */
+  /* line 112, ../sass/content/_projects.scss */
   img {
     max-height: 100%;
   }
 }
+/* line 1, ../sass/content/_contact.scss */
+h2.contactTitle {
+  color: #004400;
+}
+
+/* line 5, ../sass/content/_contact.scss */
+.skillsContainer {
+  display: inline-block;
+  text-align: left;
+  max-width: 600px;
+  color: gray;
+}
+
+/* line 12, ../sass/content/_contact.scss */
+.area {
+  margin: 10px 0px;
+}
+
 /* line 1, ../sass/content/_single.scss */
 .carWrapper {
   display: inline-block;
@@ -938,4 +952,5 @@ nav {
   border-radius: 0px;
   border-width: 0px;
   box-shadow: none;
+  margin-bottom: 0px;
 }
