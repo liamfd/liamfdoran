@@ -17,7 +17,7 @@ function checkWindowWidth(){
 	}
 
 }
-/*
+
 $(window).load(function() {
 	$("#content-slider").flexslider({
         animation: "slide",
@@ -25,18 +25,22 @@ $(window).load(function() {
         animationDuration:2,
         controlsContainer: ".nav",
         manualControls: "nav .navBlock",
-        asNavFor:'#background-slider',
+
+        sync:"#background-slider",
+      //  asNavFor:'#background-slider',
         slideshow:false
     });
     $("#background-slider").flexslider({
-        sync:"#content-slider",
+       // initDelay:5000,
+        animation:'slide',
         animationDuration:2,
-        controlNav:false,
+        //controlNav:false,
         directionNav: false,
         slideshow: false
     });
 
-});*/
+});
+/*
 var children_slides;
 
 $(window).load(function() {
@@ -44,7 +48,7 @@ $(window).load(function() {
     * Create the children flexsliders. Must be array of jquery objects with the
     * flexslider data. Easiest way is to place selector group in a var.
     */
-    children_slides = $('.flexslider_children').flexslider({
+  /*  children_slides = $('.flexslider_children').flexslider({
       'slideshow': false, // Remove the animations
       'controlNav' : false, // Remove the controls
       'animation': "slide"
@@ -53,7 +57,7 @@ $(window).load(function() {
     /** 
     * Set up the main flexslider
     */
-    $('.flexslider').flexslider({
+  /*  $('.flexslider').flexslider({
         animation: "slide",
         directionNav: false,
         controlsContainer: ".nav",
@@ -69,7 +73,7 @@ $(window).load(function() {
     * fortunately, since all the children are not animating,
     * they will only update if the main flexslider updates. 
     */
-    function update_children_slides (slide_number){
+ /*   function update_children_slides (slide_number){
       // Iterate through the children slides but not past the max
       for (i=0;i<children_slides.length;i++) {
         // Run the animate method on the child slide
@@ -77,3 +81,4 @@ $(window).load(function() {
       }
     }
 });
+*/
