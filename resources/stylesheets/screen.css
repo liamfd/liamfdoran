@@ -509,52 +509,53 @@ html[xmlns] .slides {
 body {
   background-color: #660000;
   font-size: 62.5%;
+  height: 100%;
 }
 
-/* line 6, ../sass/shared/_common.scss */
+/* line 7, ../sass/shared/_common.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Telegrafico", sans-serif;
 }
 
-/* line 9, ../sass/shared/_common.scss */
+/* line 10, ../sass/shared/_common.scss */
 h1 {
   font-size: 8em;
 }
 
-/* line 14, ../sass/shared/_common.scss */
+/* line 15, ../sass/shared/_common.scss */
 h2 {
   font-size: 6em;
 }
 
-/* line 18, ../sass/shared/_common.scss */
+/* line 19, ../sass/shared/_common.scss */
 h3 {
   font-size: 1.8em;
 }
 
-/* line 22, ../sass/shared/_common.scss */
+/* line 23, ../sass/shared/_common.scss */
 p, a {
   font-family: "Bitter", serif;
   font-size: 1.5em;
 }
 
-/* line 27, ../sass/shared/_common.scss */
+/* line 28, ../sass/shared/_common.scss */
 img {
   max-width: 100%;
 }
 
-/* line 31, ../sass/shared/_common.scss */
+/* line 32, ../sass/shared/_common.scss */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 35, ../sass/shared/_common.scss */
+/* line 36, ../sass/shared/_common.scss */
 strong {
   font-weight: bold;
 }
 
-/* line 39, ../sass/shared/_common.scss */
+/* line 40, ../sass/shared/_common.scss */
 h2.title {
   color: #001030;
 }
@@ -570,42 +571,78 @@ h2.title {
   z-index: -1;
 }
 
-/* line 11, ../sass/shared/_frame.scss */
-#color, #red, #green, #blue {
-  margin: 20px;
-  display: inline-block;
-  background-color: gray;
-  width: 50px;
-  height: 20px;
+/* line 12, ../sass/shared/_frame.scss */
+#background-slider {
+  display: block;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 500px;
+  z-index: -1;
+  border: 4px solid gray;
+}
+/* line 24, ../sass/shared/_frame.scss */
+#background-slider .slides {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #0b0b0b;
+}
+/* line 29, ../sass/shared/_frame.scss */
+#background-slider .slides li {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+/* line 34, ../sass/shared/_frame.scss */
+#background-slider .slides li .color-container, #background-slider .slides li .red, #background-slider .slides li .green, #background-slider .slides li .blue {
+  position: relative;
+  min-height: 100%;
+  min-width: 100%;
+  margin: 0 auto;
+}
+/* line 41, ../sass/shared/_frame.scss */
+#background-slider .slides li .red {
+  background-color: #330033;
+}
+/* line 45, ../sass/shared/_frame.scss */
+#background-slider .slides li .green {
+  background-color: #004400;
+}
+/* line 49, ../sass/shared/_frame.scss */
+#background-slider .slides li .blue {
+  background-color: #000033;
 }
 
-/* line 22, ../sass/shared/_frame.scss */
+/* line 57, ../sass/shared/_frame.scss */
 .centered {
   margin-top: 15%;
   text-align: center;
 }
 
-/* line 32, ../sass/shared/_frame.scss */
+/* line 67, ../sass/shared/_frame.scss */
 .frame {
   display: inline-block;
   background-color: #f2f2f2;
   border-radius: 3px;
   max-width: 800px;
   width: 100%;
+  z-index: 10;
 }
 
-/* line 40, ../sass/shared/_frame.scss */
+/* line 76, ../sass/shared/_frame.scss */
 h1.name {
   letter-spacing: 3px;
   color: #f2f2f2;
 }
 
-/* line 45, ../sass/shared/_frame.scss */
+/* line 81, ../sass/shared/_frame.scss */
 .container {
   padding: 10px;
 }
 
-/* line 49, ../sass/shared/_frame.scss */
+/* line 85, ../sass/shared/_frame.scss */
 a.email {
   display: inline-block;
   text-decoration: none;
@@ -652,10 +689,11 @@ nav {
 
 /* line 45, ../sass/shared/_nav.scss */
 .triangle:hover, .triangleContainer .leftTriangle:hover, .triangleContainer .rightTriangle:hover {
-  border-left: 30px solid transparent;
-  border-right: 30px solid transparent;
-  border-bottom: 0px solid transparent;
-  border-top: 30px solid #001030;
+  border-bottom: 30px solid rgba(0, 0, 0, 0.7);
+  /*border-left: $triangleHeight solid transparent;
+  border-right: $triangleHeight solid transparent;
+  border-bottom:0px solid transparent;
+  border-top: $triangleHeight solid $primary;*/
 }
 
 /*
@@ -896,4 +934,12 @@ nav {
   display: inline-block;
   width: 780px;
   text-align: center;
+}
+
+/* line 7, ../sass/content/_single.scss */
+#content-slider {
+  background-color: #f2f2f2;
+  border-radius: 0px;
+  border-width: 0px;
+  box-shadow: none;
 }

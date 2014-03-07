@@ -4,7 +4,18 @@ html
 		include ../shared/head
 
 	body
-		.blueDiv
+		.flexslider(id="background-slider")
+			.slides
+				li
+					.red
+						include ../content/bio
+				li
+					.green
+						include ../content/bio
+				li
+					.blue
+						include ../content/bio
+
 		.centered
 			h1.name Liam Doran
 

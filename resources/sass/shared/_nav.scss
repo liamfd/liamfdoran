@@ -43,12 +43,12 @@ $triangleHeight: 30px; //really a width too
 }
 
 .triangle:hover{
-	border-left: $triangleHeight solid transparent;
+	border-bottom: $triangleHeight solid $trans_black;
+	/*border-left: $triangleHeight solid transparent;
 	border-right: $triangleHeight solid transparent;
 	border-bottom:0px solid transparent;
-	border-top: $triangleHeight solid $primary;
+	border-top: $triangleHeight solid $primary;*/
 }
-
 
 
 /*

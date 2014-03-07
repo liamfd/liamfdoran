@@ -21,7 +21,7 @@ function checkWindowWidth(){
 $(window).load(function() {
     $(".flexslider").flexslider({
         animation: "slide",
-        directionNav: false,
+       // directionNav: false,
         controlsContainer: ".nav",
         manualControls: "nav .navBlock"
     });
