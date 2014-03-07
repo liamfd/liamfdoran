@@ -561,17 +561,6 @@ h2.title {
 }
 
 /* line 1, ../sass/shared/_frame.scss */
-.blueDiv {
-  background-color: gray;
-  width: 50%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  position: absolute;
-  z-index: -1;
-}
-
-/* line 12, ../sass/shared/_frame.scss */
 #background-slider {
   background-color: gray;
   display: block;
@@ -584,45 +573,45 @@ h2.title {
   z-index: -1;
   border-width: 0px;
 }
-/* line 25, ../sass/shared/_frame.scss */
+/* line 14, ../sass/shared/_frame.scss */
 #background-slider .slides {
   position: relative;
   height: 10000px;
   width: 100%;
   background-color: #0b0b0b;
 }
-/* line 32, ../sass/shared/_frame.scss */
+/* line 21, ../sass/shared/_frame.scss */
 #background-slider .slides li {
   position: relative;
   height: 100%;
   width: 100%;
 }
-/* line 37, ../sass/shared/_frame.scss */
+/* line 26, ../sass/shared/_frame.scss */
 #background-slider .slides li .color-container, #background-slider .slides li .red, #background-slider .slides li .green, #background-slider .slides li .blue {
   position: relative;
   min-height: 100%;
   min-width: 100%;
 }
-/* line 44, ../sass/shared/_frame.scss */
+/* line 33, ../sass/shared/_frame.scss */
 #background-slider .slides li .red {
   background-color: #330033;
 }
-/* line 48, ../sass/shared/_frame.scss */
+/* line 37, ../sass/shared/_frame.scss */
 #background-slider .slides li .green {
   background-color: #004400;
 }
-/* line 52, ../sass/shared/_frame.scss */
+/* line 41, ../sass/shared/_frame.scss */
 #background-slider .slides li .blue {
   background-color: #000033;
 }
 
-/* line 60, ../sass/shared/_frame.scss */
+/* line 49, ../sass/shared/_frame.scss */
 .centered {
   margin-top: 15%;
   text-align: center;
 }
 
-/* line 64, ../sass/shared/_frame.scss */
+/* line 53, ../sass/shared/_frame.scss */
 .frameWrapper {
   display: inline-block;
   max-width: 800px;
@@ -630,46 +619,31 @@ h2.title {
   z-index: 10;
 }
 
-/* line 72, ../sass/shared/_frame.scss */
+/* line 62, ../sass/shared/_frame.scss */
 .frame {
   display: inline-block;
   background-color: #f2f2f2;
   width: 100%;
 }
 
-/* line 79, ../sass/shared/_frame.scss */
+/* line 69, ../sass/shared/_frame.scss */
 h1.name {
   letter-spacing: 3px;
   color: #f2f2f2;
 }
 
-/* line 84, ../sass/shared/_frame.scss */
+/* line 74, ../sass/shared/_frame.scss */
 .container {
   padding: 10px;
 }
 
-/* line 88, ../sass/shared/_frame.scss */
+/* line 78, ../sass/shared/_frame.scss */
 a.email {
   display: inline-block;
   text-decoration: none;
   margin-top: 20px;
   color: #001030;
   font-size: 20px;
-}
-
-/* line 1, ../sass/shared/_nav.scss */
-nav {
-  width: 100%;
-  text-align: center;
-  height: 45px;
-}
-
-/* line 9, ../sass/shared/_nav.scss */
-.navBlock {
-  display: inline-block;
-  text-align: center;
-  width: 33.333%;
-  height: 38px;
 }
 
 		                                   /*
@@ -716,17 +690,45 @@ border-top: $triangleHeight solid $primary;*/
 /* line 3, ../sass/shared/_newnav.scss */
 nav {
   display: inline-block;
-  padding: 10px;
+  height: 40px;
   text-align: center;
   width: 100%;
 }
 
-/* line 11, ../sass/shared/_newnav.scss */
-.navBlock {
+/* line 12, ../sass/shared/_newnav.scss */
+.navBlock, .navBlockCenter {
   display: inline-block;
+  width: 33%;
+}
+/* line 17, ../sass/shared/_newnav.scss */
+.navBlock .navEleWrapper, .navBlockCenter .navEleWrapper {
+  width: 100%;
+  margin-top: 10px;
+}
+/* line 20, ../sass/shared/_newnav.scss */
+.navBlock .navEleWrapper h3.navTitle, .navBlockCenter .navEleWrapper h3.navTitle {
+  display: inline-block;
+  background-color: #f2f2f2;
+  width: 100%;
 }
 
-/* line 17, ../sass/shared/_newnav.scss */
+/* line 27, ../sass/shared/_newnav.scss */
+.navBlockCenter {
+  width: 34%;
+}
+/* line 30, ../sass/shared/_newnav.scss */
+.navBlockCenter .navEleWrapper {
+  width: 100%;
+  margin-top: 10px;
+}
+/* line 33, ../sass/shared/_newnav.scss */
+.navBlockCenter .navEleWrapper h3.navTitle {
+  display: inline-block;
+  background-color: #f2f2f2;
+  width: 100%;
+}
+
+/* line 40, ../sass/shared/_newnav.scss */
 .navShapeBlock {
   text-align: center;
   width: 100%;
@@ -737,14 +739,14 @@ nav {
   margin-right: auto;
 }
 
-/* line 30, ../sass/shared/_newnav.scss */
+/* line 53, ../sass/shared/_newnav.scss */
 .triangleContainer {
   display: table-cell;
   position: relative;
   width: 60px;
   height: 30px;
 }
-/* line 36, ../sass/shared/_newnav.scss */
+/* line 59, ../sass/shared/_newnav.scss */
 .triangleContainer .triangle, .triangleContainer .leftTriangle, .triangleContainer .rightTriangle, .triangleContainer .midTriangle {
   display: inline-block;
   position: absolute;
@@ -756,30 +758,30 @@ nav {
   border-left: 30px solid transparent;
   border-right: 30px solid transparent;
 }
-/* line 52, ../sass/shared/_newnav.scss */
+/* line 75, ../sass/shared/_newnav.scss */
 .triangleContainer .leftTriangle {
   left: 0;
   border-left: 0px solid transparent;
 }
-/* line 57, ../sass/shared/_newnav.scss */
+/* line 80, ../sass/shared/_newnav.scss */
 .triangleContainer .rightTriangle {
   left: 30px;
   border-right: 0px solid transparent;
 }
-/* line 62, ../sass/shared/_newnav.scss */
+/* line 85, ../sass/shared/_newnav.scss */
 .triangleContainer .midTriangle {
   border-top: 0px solid transparent;
   border-bottom: 30px solid transparent;
 }
 
-/* line 69, ../sass/shared/_newnav.scss */
+/* line 92, ../sass/shared/_newnav.scss */
 .filler {
   display: table-cell;
   height: 30px;
   background-color: #f2f2f2;
 }
 
-/* line 75, ../sass/shared/_newnav.scss */
+/* line 98, ../sass/shared/_newnav.scss */
 .triangleContainer:hover .midTriangle {
   border-bottom: 30px solid rgba(255, 255, 255, 0.3);
 }

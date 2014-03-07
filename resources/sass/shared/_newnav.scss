@@ -1,8 +1,9 @@
 $triangleHeight:30px;
-
+$navHeight:40px;
 nav{
 	display:inline-block;
-	padding:10px;
+	height:$navHeight;
+	//padding:10px;
 //	background-color:$white;
 	text-align:center;
 	width:100%;
@@ -10,9 +11,31 @@ nav{
 
 .navBlock{
 	display:inline-block;
-//	width:25%;
+	width:33%;
 	//background-color:$white;
 	//height:$navHeight;
+	.navEleWrapper{
+		width:100%;
+		margin-top:$navHeight - $triangleHeight; //moves it as far from top as it can
+		h3.navTitle{
+			display:inline-block;
+			background-color:$white;
+			width:100%;
+		}
+	}
+}
+.navBlockCenter{
+	@extend .navBlock;
+	width:34%;
+	.navEleWrapper{
+		width:100%;
+		margin-top:$navHeight - $triangleHeight; //moves it as far from top as it can
+		h3.navTitle{
+			display:inline-block;
+			background-color:$white;
+			width:100%;
+		}
+	}
 }
 .navShapeBlock{
 	text-align: center;

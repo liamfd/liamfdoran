@@ -1,16 +1,18 @@
-mixin sectionChunk
-	.navShapeBlock
-		.filler
-		.triangleContainer
-			.leftTriangle
-			.midTriangle
-			.rightTriangle
-		.filler
+mixin triangleBlock(title)
+	.navEleWrapper
+		.navShapeBlock
+			.filler
+			.triangleContainer
+				.leftTriangle
+				.midTriangle
+				.rightTriangle
+			.filler
+		h3(class="navTitle") #{title}
 
 nav
 	.navBlock
-		+sectionChunk
+		+triangleBlock("about")
+	.navBlockCenter
+		+triangleBlock("skills")
 	.navBlock
-		+sectionChunk
-	.navBlock
-		+sectionChunk
+		+triangleBlock("fun")
