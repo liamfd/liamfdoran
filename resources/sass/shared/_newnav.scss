@@ -40,10 +40,14 @@ nav{
 	margin-left:auto;
 	margin-right:auto
 }
-
+.ffTriangleWrapper{
+	position:relative;
+	display:block;
+	height:$triangleHeight;
+	//background-color:$grey;
+}
 .triangleContainer{
 	display:table-cell;
-	position:relative;
 	width:$triangleHeight*2;
 	height:$triangleHeight;
 
@@ -67,6 +71,7 @@ nav{
 		@extend .triangle;
 		left:0;
 		border-left:0px solid transparent;
+
 	}
 	.rightTriangle{
 		@extend .triangle;

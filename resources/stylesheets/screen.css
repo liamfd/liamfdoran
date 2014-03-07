@@ -636,14 +636,20 @@ nav {
   margin-right: auto;
 }
 
-/* line 44, ../sass/shared/_newnav.scss */
+/* line 43, ../sass/shared/_newnav.scss */
+.ffTriangleWrapper {
+  position: relative;
+  display: block;
+  height: 30px;
+}
+
+/* line 49, ../sass/shared/_newnav.scss */
 .triangleContainer {
   display: table-cell;
-  position: relative;
   width: 60px;
   height: 30px;
 }
-/* line 50, ../sass/shared/_newnav.scss */
+/* line 54, ../sass/shared/_newnav.scss */
 .triangleContainer .triangle, .triangleContainer .leftTriangle, .triangleContainer .rightTriangle, .triangleContainer .midTriangle {
   display: inline-block;
   position: absolute;
@@ -655,30 +661,30 @@ nav {
   border-left: 30px solid transparent;
   border-right: 30px solid transparent;
 }
-/* line 66, ../sass/shared/_newnav.scss */
+/* line 70, ../sass/shared/_newnav.scss */
 .triangleContainer .leftTriangle {
   left: 0;
   border-left: 0px solid transparent;
 }
-/* line 71, ../sass/shared/_newnav.scss */
+/* line 76, ../sass/shared/_newnav.scss */
 .triangleContainer .rightTriangle {
   left: 30px;
   border-right: 0px solid transparent;
 }
-/* line 76, ../sass/shared/_newnav.scss */
+/* line 81, ../sass/shared/_newnav.scss */
 .triangleContainer .midTriangle {
   border-top: 0px solid transparent;
   border-bottom: 30px solid transparent;
 }
 
-/* line 83, ../sass/shared/_newnav.scss */
+/* line 88, ../sass/shared/_newnav.scss */
 .filler {
   display: table-cell;
   height: 30px;
   background-color: #f2f2f2;
 }
 
-/* line 89, ../sass/shared/_newnav.scss */
+/* line 94, ../sass/shared/_newnav.scss */
 .triangleContainer:hover .midTriangle {
   border-bottom: 30px solid rgba(255, 255, 255, 0.3);
 }
