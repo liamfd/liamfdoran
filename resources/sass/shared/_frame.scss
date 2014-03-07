@@ -58,22 +58,22 @@
 }
 
 .centered {
-   // width: 600px;
-   // height: 400px;
-   
-   // background-color:$black;
     margin-top: 15%;
-    //margin: auto;
     text-align: center;
+}
+.frameWrapper{
+    display: inline-block;
+       // border-radius: 3px;
+    max-width:800px;
+    width:100%;
+    z-index:10;
 }
 
 .frame{
     display:inline-block;
     background-color: $white;
-    border-radius: 3px;
-    max-width:800px;
     width:100%;
-    z-index:10;
+
 }
 
 h1.name{

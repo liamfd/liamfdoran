@@ -1,23 +1,3 @@
-$( document ).ready(function() {
-//	alert("working!");
-	$('#blue').click(function(){
-		//alert(this.innerText)
-		//$('.blueDiv').css("width", "100%")
-	});
-	$(window).resize(function(){
-		checkWindowWidth();
-	});
-	
-});
-
-function checkWindowWidth(){
-	width = $(window).width();
-	if (width == 800){
-		console.log(width);
-	}
-
-}
-
 $(window).load(function() {
 	$("#content-slider").flexslider({
         animation: "slide",
@@ -25,8 +5,8 @@ $(window).load(function() {
         animationDuration:2,
         controlsContainer: ".nav",
         manualControls: "nav .navBlock",
-
         sync:"#background-slider",
+        animationLoop:false,
       //  asNavFor:'#background-slider',
         slideshow:false
     });
@@ -34,7 +14,7 @@ $(window).load(function() {
        // initDelay:5000,
         animation:'slide',
         animationDuration:2,
-        //controlNav:false,
+        animationLoop:false, //needed to sync properly, otherwise don't move same
         directionNav: false,
         slideshow: false
     });

@@ -9,10 +9,10 @@ $navHeight: 38px;
 .navBlock{
 	display:inline-block;
 	text-align: center;
-	width:25%;
+	width:33.333%;
 	height:$navHeight;
 }
-
+/*
 $triangleHeight: 30px; //really a width too
 .navEleWrapper{
 	width:100%;
@@ -31,7 +31,7 @@ $triangleHeight: 30px; //really a width too
 		-webkit-transition: all 0.3s ease-out;
 		-moz-transition: all 0.3s ease-out;
 		-ms-transition: all 0.3s ease-out; /* IE10 is actually unprefixed */
-		-o-transition: all 0.3s ease-out;
+	/*	-o-transition: all 0.3s ease-out;
 		transition: all 0.3s ease-out;
 		//border-radius:10000px;
 		//width:$circleDiameter;
@@ -41,7 +41,7 @@ $triangleHeight: 30px; //really a width too
 
 	}
 }
-
+*/
 //.triangle:hover{
 //	border-bottom: $triangleHeight solid $trans_black;
 	/*border-left: $triangleHeight solid transparent;

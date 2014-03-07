@@ -4,7 +4,7 @@ html
 		include ../shared/head
 
 	body
-		.flexslider(id="background-slider")
+		.flexslider_children(id="background-slider")
 			.slides
 				li
 					.red
@@ -19,15 +19,13 @@ html
 		.centered
 			h1.name Liam Doran
 
-			.frame
-				include ../shared/nav
-			
-				.container
-					//#red red
-					//#green green
-					//#blue blue
-					.content
-						block content
-				a.email liamfd@gmail.com
-		include ../shared/foot
-		include ../shared/newnav
+			.frameWrapper
+				include ../shared/newnav
+				.frame
+					.container
+						//#red red
+						//#green green
+						//#blue blue
+						.content
+							block content
+					a.email liamfd@gmail.com

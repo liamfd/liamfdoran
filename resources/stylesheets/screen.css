@@ -622,14 +622,19 @@ h2.title {
   text-align: center;
 }
 
-/* line 70, ../sass/shared/_frame.scss */
-.frame {
+/* line 64, ../sass/shared/_frame.scss */
+.frameWrapper {
   display: inline-block;
-  background-color: #f2f2f2;
-  border-radius: 3px;
   max-width: 800px;
   width: 100%;
   z-index: 10;
+}
+
+/* line 72, ../sass/shared/_frame.scss */
+.frame {
+  display: inline-block;
+  background-color: #f2f2f2;
+  width: 100%;
 }
 
 /* line 79, ../sass/shared/_frame.scss */
@@ -663,31 +668,40 @@ nav {
 .navBlock {
   display: inline-block;
   text-align: center;
-  width: 25%;
+  width: 33.333%;
   height: 38px;
 }
 
-/* line 17, ../sass/shared/_nav.scss */
-.navEleWrapper {
-  width: 100%;
-  margin-top: 8px;
-}
-/* line 21, ../sass/shared/_nav.scss */
-.navEleWrapper .triangle, .navEleWrapper .triangleContainer .leftTriangle, .triangleContainer .navEleWrapper .leftTriangle, .navEleWrapper .triangleContainer .rightTriangle, .triangleContainer .navEleWrapper .rightTriangle, .navEleWrapper .triangleContainer .midTriangle, .triangleContainer .navEleWrapper .midTriangle {
-  display: inline-block;
-  width: 0;
-  height: 0;
-  border-left: 30px solid transparent;
-  border-right: 30px solid transparent;
-  border-bottom: 30px solid #001030;
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -ms-transition: all 0.3s ease-out;
-  /* IE10 is actually unprefixed */
-  -o-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-}
+		                                   /*
+$triangleHeight: 30px; //really a width too
+.navEleWrapper{
+	width:100%;
+	margin-top:$navHeight - $triangleHeight; //moves it as far from top as it can
 
+	.triangle{
+		display:inline-block;
+
+		width: 0; 
+		height: 0; 
+		border-left: $triangleHeight solid transparent;
+		border-right: $triangleHeight solid transparent;
+		
+		border-bottom: $triangleHeight solid $primary;
+
+		-webkit-transition: all 0.3s ease-out;
+		-moz-transition: all 0.3s ease-out;
+		-ms-transition: all 0.3s ease-out; /* IE10 is actually unprefixed */
+	/*	-o-transition: all 0.3s ease-out;
+		transition: all 0.3s ease-out;
+		//border-radius:10000px;
+		//width:$circleDiameter;
+		//height:$circleDiameter;
+	}
+	h3.title{
+
+	}
+}
+*/
 /*border-left: $triangleHeight solid transparent;
 border-right: $triangleHeight solid transparent;
 border-bottom:0px solid transparent;
@@ -699,10 +713,12 @@ border-top: $triangleHeight solid $primary;*/
 		background-color:$white;
 	}
 }*/
-/* line 5, ../sass/shared/_newnav.scss */
-.navContainer {
+/* line 3, ../sass/shared/_newnav.scss */
+nav {
+  display: inline-block;
   padding: 10px;
   text-align: center;
+  width: 100%;
 }
 
 /* line 11, ../sass/shared/_newnav.scss */
@@ -728,26 +744,7 @@ border-top: $triangleHeight solid $primary;*/
   width: 60px;
   height: 30px;
 }
-/* line 35, ../sass/shared/_newnav.scss */
-.triangleContainer .box, .triangleContainer .leftBox, .triangleContainer .rightBox {
-  display: inline-block;
-  z-index: 1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 30px;
-  width: 30px;
-  background-color: gray;
-}
-/* line 47, ../sass/shared/_newnav.scss */
-.triangleContainer .leftBox {
-  left: 0;
-}
-/* line 52, ../sass/shared/_newnav.scss */
-.triangleContainer .rightBox {
-  left: 90px;
-}
-/* line 58, ../sass/shared/_newnav.scss */
+/* line 36, ../sass/shared/_newnav.scss */
 .triangleContainer .triangle, .triangleContainer .leftTriangle, .triangleContainer .rightTriangle, .triangleContainer .midTriangle {
   display: inline-block;
   position: absolute;
@@ -755,31 +752,36 @@ border-top: $triangleHeight solid $primary;*/
   z-index: 2;
   width: 0;
   height: 0;
-  border-top: 30px solid #660000;
+  border-top: 30px solid #f2f2f2;
   border-left: 30px solid transparent;
   border-right: 30px solid transparent;
 }
-/* line 74, ../sass/shared/_newnav.scss */
+/* line 52, ../sass/shared/_newnav.scss */
 .triangleContainer .leftTriangle {
   left: 0;
   border-left: 0px solid transparent;
 }
-/* line 79, ../sass/shared/_newnav.scss */
+/* line 57, ../sass/shared/_newnav.scss */
 .triangleContainer .rightTriangle {
   left: 30px;
   border-right: 0px solid transparent;
 }
-/* line 85, ../sass/shared/_newnav.scss */
+/* line 62, ../sass/shared/_newnav.scss */
 .triangleContainer .midTriangle {
-  border-top: 0 solid #0b0b0b;
+  border-top: 0px solid transparent;
   border-bottom: 30px solid transparent;
 }
 
-/* line 95, ../sass/shared/_newnav.scss */
+/* line 69, ../sass/shared/_newnav.scss */
 .filler {
   display: table-cell;
   height: 30px;
   background-color: #f2f2f2;
+}
+
+/* line 75, ../sass/shared/_newnav.scss */
+.triangleContainer:hover .midTriangle {
+  border-bottom: 30px solid rgba(255, 255, 255, 0.3);
 }
 
 /* line 1, ../sass/content/_bio.scss */
