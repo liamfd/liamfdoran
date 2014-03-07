@@ -6,7 +6,7 @@ $(window).load(function() {
         controlsContainer: ".nav",
         manualControls: "nav .navBlock",
         sync:"#background-slider",
-        animationLoop:false,
+      //  animationLoop:false,
       //  asNavFor:'#background-slider',
         slideshow:false
     });
@@ -14,7 +14,7 @@ $(window).load(function() {
        // initDelay:5000,
         animation:'slide',
         animationDuration:2,
-        animationLoop:false, //needed to sync properly, otherwise don't move same
+       // animationLoop:false, //needed to sync properly, otherwise don't move same
         directionNav: false,
         slideshow: false
     });

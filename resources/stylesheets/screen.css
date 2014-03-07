@@ -67,102 +67,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/**************************************
-jQuery Open Carousel
-
-Copyright (c) 2013 Justin McCandless (justinmccandless.com)
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-***************************************/
-/*
-This is the necessary css for Open Carousel
-Include jquery.openCarousel.js and jquery.openCarousel.css in your projects
-*/
-/* line 17, ../sass/utils/_jquery.openCarousel.scss */
-.ocarousel {
-  display: none;
+@font-face {
+  font-family: "telegrafico";
+  src: url('/fonts/telegrafico/telegrafico.ttf') format('truetype');
 }
 
-/* line 20, ../sass/utils/_jquery.openCarousel.scss */
-.ocarousel_window {
-  overflow: hidden;
-  white-space: nowrap;
-  /* default size */
-  width: 100%;
-  height: 200px;
-}
-
-/* line 27, ../sass/utils/_jquery.openCarousel.scss */
-.ocarousel_window_slides {
-  position: relative;
-  margin: 0 auto;
-  overflow: hidden;
-  width: 50000px;
-  white-space: nowrap;
-}
-
-/* IE6 Hack instead of >* child selector */
-/* line 35, ../sass/utils/_jquery.openCarousel.scss */
-.ocarousel_window_slides * {
-  float: left;
-  white-space: normal;
-}
-
-/* line 39, ../sass/utils/_jquery.openCarousel.scss */
-.ocarousel_window_slides * * {
-  float: none;
-}
-
-/* line 42, ../sass/utils/_jquery.openCarousel.scss */
-.ocarousel_window_slides_vertical {
-  float: none;
-  white-space: normal;
-  display: block;
-}
-
-/* line 47, ../sass/utils/_jquery.openCarousel.scss */
-.ocarousel_indicators {
-  width: 100%;
-}
-
-/* line 50, ../sass/utils/_jquery.openCarousel.scss */
-.ocarousel_indicators svg {
-  height: 50px;
-  margin: 0 auto;
-  width: 100%;
-}
-
-/* line 55, ../sass/utils/_jquery.openCarousel.scss */
-.ocarousel_indicators svg circle {
-  cursor: pointer;
-}
-
-/* Fallback indicators for no SVG support */
-/* line 60, ../sass/utils/_jquery.openCarousel.scss */
-.ocarousel_indicator {
-  display: inline-block;
-  height: 16px;
-  width: 16px;
-  margin: 0 1px;
-  overflow: hidden;
-  cursor: pointer;
-  /* IE 8< inline-block fix */
-  *display: inline;
-  zoom: 1;
-}
-
-/* line 72, ../sass/utils/_jquery.openCarousel.scss */
-.ocarousel_indicator_active {
-  background: url("../images/indicatorsSVGFallback.gif") 0 0;
-}
-
-/* line 75, ../sass/utils/_jquery.openCarousel.scss */
-.ocarousel_indicator_inactive {
-  background: url("../images/indicatorsSVGFallback.gif") -16px 0;
+@font-face {
+  font-family: "coolvetica rg";
+  src: url('/fonts/coolvetica/coolvetica rg.ttf') format('truetype');
 }
 
 /*
@@ -514,7 +426,7 @@ body {
 
 /* line 7, ../sass/shared/_common.scss */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Telegrafico", sans-serif;
+  font-family: "telegrafico", "Times New Roman", sans-serif;
 }
 
 /* line 10, ../sass/shared/_common.scss */
@@ -534,8 +446,8 @@ h3 {
 
 /* line 23, ../sass/shared/_common.scss */
 p, a {
-  font-family: "Bitter", serif;
-  font-size: 1.5em;
+  font-family: "Bitter";
+  font-size: 1.8em;
 }
 
 /* line 28, ../sass/shared/_common.scss */
@@ -633,7 +545,7 @@ h1.name {
 
 /* line 63, ../sass/shared/_frame.scss */
 .container {
-  padding: 10px;
+  padding: 20px 10px;
 }
 
 /* line 67, ../sass/shared/_frame.scss */

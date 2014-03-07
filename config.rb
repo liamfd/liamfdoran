@@ -6,6 +6,7 @@ css_dir = "resources/stylesheets"
 sass_dir = "resources/sass"
 images_dir = "resources/images"
 javascripts_dir = "resources/javascripts"
+fonts_dir = "fonts"
 require 'breakpoint'
 
 # You can select your preferred output style here (can be overridden via the command line):

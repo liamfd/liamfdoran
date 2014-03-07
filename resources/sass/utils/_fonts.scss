@@ -1,0 +1,5 @@
+@include font-face("telegrafico", font-files("telegrafico/telegrafico.ttf"));
+@include font-face("coolvetica rg", font-files("coolvetica/coolvetica rg.ttf"));
+
+$coolvetica-font: "coolvetica rg", Arial, Helvetica, sans-serif;
+$telegrafico-font: "telegrafico", "Times New Roman", sans-serif;
