@@ -72,11 +72,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   src: url('/fonts/telegrafico/telegrafico.ttf') format('truetype');
 }
 
-@font-face {
-  font-family: "coolvetica rg";
-  src: url('/fonts/coolvetica/coolvetica rg.ttf') format('truetype');
-}
-
 /*
  * jQuery FlexSlider v2.2.0
  * http://www.woothemes.com/flexslider/
@@ -419,7 +414,7 @@ html[xmlns] .slides {
 }
 /* line 1, ../sass/shared/_common.scss */
 body {
-  background-color: #660000;
+  background-color: gray;
   font-size: 62.5%;
   height: 100%;
 }
@@ -541,14 +536,15 @@ strong {
 h1.name {
   letter-spacing: 3px;
   color: #f2f2f2;
+  font-family: "telegrafico", "Times New Roman", sans-serif;
 }
 
-/* line 63, ../sass/shared/_frame.scss */
+/* line 64, ../sass/shared/_frame.scss */
 .container {
   padding: 20px 10px;
 }
 
-/* line 67, ../sass/shared/_frame.scss */
+/* line 68, ../sass/shared/_frame.scss */
 a.email {
   display: inline-block;
   text-decoration: none;
@@ -620,15 +616,16 @@ nav {
 .navBlock .navEleWrapper h3.navTitle {
   display: inline-block;
   background-color: #f2f2f2;
+  color: #404040;
   width: 100%;
 }
 
-/* line 27, ../sass/shared/_newnav.scss */
+/* line 28, ../sass/shared/_newnav.scss */
 .centerThird {
   width: 34%;
 }
 
-/* line 30, ../sass/shared/_newnav.scss */
+/* line 31, ../sass/shared/_newnav.scss */
 .navShapeBlock {
   text-align: center;
   width: 100%;
@@ -639,14 +636,14 @@ nav {
   margin-right: auto;
 }
 
-/* line 43, ../sass/shared/_newnav.scss */
+/* line 44, ../sass/shared/_newnav.scss */
 .triangleContainer {
   display: table-cell;
   position: relative;
   width: 60px;
   height: 30px;
 }
-/* line 49, ../sass/shared/_newnav.scss */
+/* line 50, ../sass/shared/_newnav.scss */
 .triangleContainer .triangle, .triangleContainer .leftTriangle, .triangleContainer .rightTriangle, .triangleContainer .midTriangle {
   display: inline-block;
   position: absolute;
@@ -658,30 +655,30 @@ nav {
   border-left: 30px solid transparent;
   border-right: 30px solid transparent;
 }
-/* line 65, ../sass/shared/_newnav.scss */
+/* line 66, ../sass/shared/_newnav.scss */
 .triangleContainer .leftTriangle {
   left: 0;
   border-left: 0px solid transparent;
 }
-/* line 70, ../sass/shared/_newnav.scss */
+/* line 71, ../sass/shared/_newnav.scss */
 .triangleContainer .rightTriangle {
   left: 30px;
   border-right: 0px solid transparent;
 }
-/* line 75, ../sass/shared/_newnav.scss */
+/* line 76, ../sass/shared/_newnav.scss */
 .triangleContainer .midTriangle {
   border-top: 0px solid transparent;
   border-bottom: 30px solid transparent;
 }
 
-/* line 82, ../sass/shared/_newnav.scss */
+/* line 83, ../sass/shared/_newnav.scss */
 .filler {
   display: table-cell;
   height: 30px;
   background-color: #f2f2f2;
 }
 
-/* line 88, ../sass/shared/_newnav.scss */
+/* line 89, ../sass/shared/_newnav.scss */
 .triangleContainer:hover .midTriangle {
   border-bottom: 30px solid rgba(255, 255, 255, 0.3);
 }
@@ -759,14 +756,6 @@ h2.projectsTitle {
   margin-top: 16%;
   color: #f2f2f2;
 }
-/* line 49, ../sass/content/_projects.scss */
-.projectImageContainer .details .text .role, .projectImageContainer .details .text .tools {
-  font-size: 1.5em;
-}
-/* line 52, ../sass/content/_projects.scss */
-.projectImageContainer .details .text .tools {
-  font-size: 1em;
-}
 /* line 60, ../sass/content/_projects.scss */
 .projectImageContainer .projectImage {
   text-align: center;
@@ -784,13 +773,18 @@ h2.projectsTitle {
 }
 @media only screen and (max-device-width: 800px), only screen and (max-width: 800px) {
   /* line 76, ../sass/content/_projects.scss */
+  h3 {
+    color: #404040;
+  }
+
+  /* line 80, ../sass/content/_projects.scss */
   .project {
     width: 100%;
     min-height: 120px;
     text-align: left;
   }
 
-  /* line 81, ../sass/content/_projects.scss */
+  /* line 85, ../sass/content/_projects.scss */
   a.projectImageContainer {
     width: 100%;
     display: inline-block;
@@ -798,37 +792,34 @@ h2.projectsTitle {
     text-align: center;
     min-height: 100px;
   }
-  /* line 88, ../sass/content/_projects.scss */
+  /* line 92, ../sass/content/_projects.scss */
   a.projectImageContainer .projectImage, a.projectImageContainer .details {
     height: 100px;
     position: static;
     display: inline-block;
     vertical-align: top;
   }
-  /* line 94, ../sass/content/_projects.scss */
+  /* line 98, ../sass/content/_projects.scss */
   a.projectImageContainer .details {
     background-color: #f2f2f2;
     width: 60%;
   }
-  /* line 97, ../sass/content/_projects.scss */
+  /* line 101, ../sass/content/_projects.scss */
   a.projectImageContainer .details .text {
     margin-top: 0%;
+    color: gray;
   }
-  /* line 99, ../sass/content/_projects.scss */
-  a.projectImageContainer .details .text .role, a.projectImageContainer .details .text .tools {
-    color: #001030;
-  }
-  /* line 104, ../sass/content/_projects.scss */
+  /* line 106, ../sass/content/_projects.scss */
   a.projectImageContainer .projectImage {
     width: 40%;
   }
 
-  /* line 108, ../sass/content/_projects.scss */
+  /* line 110, ../sass/content/_projects.scss */
   .projectImage:hover + .details, .details:hover {
     display: inline-block;
   }
 
-  /* line 112, ../sass/content/_projects.scss */
+  /* line 114, ../sass/content/_projects.scss */
   img {
     max-height: 100%;
   }

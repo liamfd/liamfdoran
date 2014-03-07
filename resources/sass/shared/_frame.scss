@@ -58,6 +58,7 @@
 h1.name{
     letter-spacing: 3px;
     color:$white;
+    font-family:$telegrafico-font;
 }
 
 .container{
@@ -74,5 +75,5 @@ a.email{
 
 
 @media only screen and (max-device-width: 600px), only screen and (max-width: 600px){
-    
+  
 }

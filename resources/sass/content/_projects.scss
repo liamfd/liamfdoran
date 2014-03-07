@@ -46,11 +46,11 @@ h2.projectsTitle{
     	.text{
     		margin-top: 16%;
     		color:$white;
-			.role, .tools{
-				font-size: 1.5em;
+			.role{
+				//font-size: 1.5em;
 			}
 			.tools{
-				font-size: 1em;
+			//	font-size: 1em;
 			}
     	//	font-size: 2em;
     	//	font-family: bitter;
@@ -73,6 +73,10 @@ h2.projectsTitle{
 }
 
 @media only screen and (max-device-width: 800px), only screen and (max-width: 800px){
+	h3{
+		color:$dark-grey;
+	}
+
 	.project{
 		width:100%;
 		min-height:120px;
@@ -96,9 +100,7 @@ h2.projectsTitle{
 			width:60%;
 			.text{
 				margin-top:0%;
-				.role, .tools{
-					color:$secondary;
-				}
+				color:$grey;
 			}
 		}
 		.projectImage{
