@@ -24,18 +24,8 @@ nav{
 		}
 	}
 }
-.navBlockCenter{
-	@extend .navBlock;
+.centerThird{
 	width:34%;
-	.navEleWrapper{
-		width:100%;
-		margin-top:$navHeight - $triangleHeight; //moves it as far from top as it can
-		h3.navTitle{
-			display:inline-block;
-			background-color:$white;
-			width:100%;
-		}
-	}
 }
 .navShapeBlock{
 	text-align: center;

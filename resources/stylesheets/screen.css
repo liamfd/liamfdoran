@@ -696,39 +696,28 @@ nav {
 }
 
 /* line 12, ../sass/shared/_newnav.scss */
-.navBlock, .navBlockCenter {
+.navBlock {
   display: inline-block;
   width: 33%;
 }
 /* line 17, ../sass/shared/_newnav.scss */
-.navBlock .navEleWrapper, .navBlockCenter .navEleWrapper {
+.navBlock .navEleWrapper {
   width: 100%;
   margin-top: 10px;
 }
 /* line 20, ../sass/shared/_newnav.scss */
-.navBlock .navEleWrapper h3.navTitle, .navBlockCenter .navEleWrapper h3.navTitle {
+.navBlock .navEleWrapper h3.navTitle {
   display: inline-block;
   background-color: #f2f2f2;
   width: 100%;
 }
 
 /* line 27, ../sass/shared/_newnav.scss */
-.navBlockCenter {
+.centerThird {
   width: 34%;
 }
-/* line 30, ../sass/shared/_newnav.scss */
-.navBlockCenter .navEleWrapper {
-  width: 100%;
-  margin-top: 10px;
-}
-/* line 33, ../sass/shared/_newnav.scss */
-.navBlockCenter .navEleWrapper h3.navTitle {
-  display: inline-block;
-  background-color: #f2f2f2;
-  width: 100%;
-}
 
-/* line 40, ../sass/shared/_newnav.scss */
+/* line 30, ../sass/shared/_newnav.scss */
 .navShapeBlock {
   text-align: center;
   width: 100%;
@@ -739,14 +728,14 @@ nav {
   margin-right: auto;
 }
 
-/* line 53, ../sass/shared/_newnav.scss */
+/* line 43, ../sass/shared/_newnav.scss */
 .triangleContainer {
   display: table-cell;
   position: relative;
   width: 60px;
   height: 30px;
 }
-/* line 59, ../sass/shared/_newnav.scss */
+/* line 49, ../sass/shared/_newnav.scss */
 .triangleContainer .triangle, .triangleContainer .leftTriangle, .triangleContainer .rightTriangle, .triangleContainer .midTriangle {
   display: inline-block;
   position: absolute;
@@ -758,30 +747,30 @@ nav {
   border-left: 30px solid transparent;
   border-right: 30px solid transparent;
 }
-/* line 75, ../sass/shared/_newnav.scss */
+/* line 65, ../sass/shared/_newnav.scss */
 .triangleContainer .leftTriangle {
   left: 0;
   border-left: 0px solid transparent;
 }
-/* line 80, ../sass/shared/_newnav.scss */
+/* line 70, ../sass/shared/_newnav.scss */
 .triangleContainer .rightTriangle {
   left: 30px;
   border-right: 0px solid transparent;
 }
-/* line 85, ../sass/shared/_newnav.scss */
+/* line 75, ../sass/shared/_newnav.scss */
 .triangleContainer .midTriangle {
   border-top: 0px solid transparent;
   border-bottom: 30px solid transparent;
 }
 
-/* line 92, ../sass/shared/_newnav.scss */
+/* line 82, ../sass/shared/_newnav.scss */
 .filler {
   display: table-cell;
   height: 30px;
   background-color: #f2f2f2;
 }
 
-/* line 98, ../sass/shared/_newnav.scss */
+/* line 88, ../sass/shared/_newnav.scss */
 .triangleContainer:hover .midTriangle {
   border-bottom: 30px solid rgba(255, 255, 255, 0.3);
 }
@@ -919,20 +908,19 @@ nav {
   }
   /* line 95, ../sass/content/_projects.scss */
   a.projectImageContainer .details .text .role, a.projectImageContainer .details .text .tools {
-    font-size: 4em;
     color: #001030;
   }
-  /* line 101, ../sass/content/_projects.scss */
+  /* line 100, ../sass/content/_projects.scss */
   a.projectImageContainer .projectImage {
     width: 40%;
   }
 
-  /* line 105, ../sass/content/_projects.scss */
+  /* line 104, ../sass/content/_projects.scss */
   .projectImage:hover + .details, .details:hover {
     display: inline-block;
   }
 
-  /* line 109, ../sass/content/_projects.scss */
+  /* line 108, ../sass/content/_projects.scss */
   img {
     max-height: 100%;
   }
