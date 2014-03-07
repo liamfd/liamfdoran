@@ -30,7 +30,7 @@ $triangleHeight:30px;
 .triangleContainer{
 	display:table-cell;
 	position:relative;
-	width:$triangleHeight*4;
+	width:$triangleHeight*2;
 	height:$triangleHeight;
 	.box{
 		display:inline-block;
@@ -74,18 +74,21 @@ $triangleHeight:30px;
 	.leftTriangle{
 		@extend .triangle;
 		left:0;
+		border-left:0px solid transparent;
 	}
 	.rightTriangle{
 		@extend .triangle;
-		left:$triangleHeight*2;
+		left:$triangleHeight;
+	
+		border-right:0px solid transparent;
 	}
 	.midTriangle{
 		@extend .triangle;
+	//	background-color:$grey;
 		//background-color:#339900;
 		//top:-$triangleHeight;
-		left:$triangleHeight;
-		border-top: 0 solid transparent;
-		border-bottom: $triangleHeight solid $black;
+		border-top: 0 solid $black;
+		border-bottom: $triangleHeight solid transparent;
 	}
 }
 

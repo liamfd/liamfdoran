@@ -725,7 +725,7 @@ border-top: $triangleHeight solid $primary;*/
 .triangleContainer {
   display: table-cell;
   position: relative;
-  width: 120px;
+  width: 60px;
   height: 30px;
 }
 /* line 35, ../sass/shared/_newnav.scss */
@@ -762,19 +762,20 @@ border-top: $triangleHeight solid $primary;*/
 /* line 74, ../sass/shared/_newnav.scss */
 .triangleContainer .leftTriangle {
   left: 0;
+  border-left: 0px solid transparent;
 }
-/* line 78, ../sass/shared/_newnav.scss */
+/* line 79, ../sass/shared/_newnav.scss */
 .triangleContainer .rightTriangle {
-  left: 60px;
-}
-/* line 82, ../sass/shared/_newnav.scss */
-.triangleContainer .midTriangle {
   left: 30px;
-  border-top: 0 solid transparent;
-  border-bottom: 30px solid #0b0b0b;
+  border-right: 0px solid transparent;
+}
+/* line 85, ../sass/shared/_newnav.scss */
+.triangleContainer .midTriangle {
+  border-top: 0 solid #0b0b0b;
+  border-bottom: 30px solid transparent;
 }
 
-/* line 92, ../sass/shared/_newnav.scss */
+/* line 95, ../sass/shared/_newnav.scss */
 .filler {
   display: table-cell;
   height: 30px;
