@@ -15,6 +15,10 @@ h2.projectsTitle{
 	width:30%;
 	height:30px;
 	text-align:center;
+	h3{
+		font-weight:bold;
+		font-color:$secondary;
+	}
 }
 
 .projectImageContainer{
@@ -22,7 +26,7 @@ h2.projectsTitle{
 	height:$containerHeight; //ugly little solution that works b/c of my image res
     position:relative;
 	display:inline-block;
-	//overflow:hidden;
+	overflow:hidden;
 
 	/*width:30%;
 	vertical-align:top;
@@ -73,14 +77,19 @@ h2.projectsTitle{
 }
 
 @media only screen and (max-device-width: 800px), only screen and (max-width: 800px){
-	h3{
-		color:$dark-grey;
-	}
+
 
 	.project{
 		width:100%;
-		min-height:120px;
-		text-align:left;
+		max-width: 480px;
+		min-height:100px;
+		text-align:center;
+		$color:$secondary;
+			h3{
+			color:$secondary;
+			font-size:2em;
+			font-weight: bold;
+		}
 	}
 	a.projectImageContainer{
 		width:100%;
@@ -88,7 +97,11 @@ h2.projectsTitle{
 		//height:150px;
 		position:static;
 		text-align:center;
-		min-height:100px;
+		height:100px;
+		background-color:$secondary;
+		border-radius: 5px;
+
+		margin-bottom:10px;
 		.projectImage, .details{
 			height:100px;
 			position: static;
@@ -96,11 +109,18 @@ h2.projectsTitle{
 			vertical-align: top;
 		}
 		.details{
-			background-color:$white;
+			background-color:#303030;
+			padding:10px;
 			width:60%;
+			min-width: 181px;
 			.text{
 				margin-top:0%;
-				color:$grey;
+				//color:$;
+				text-align:right;
+
+				.role .tools{
+					color:$red;
+				}
 			}
 		}
 		.projectImage{

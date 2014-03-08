@@ -35,8 +35,9 @@ nav{
 	border:5px solid $white;
 	//height:$navHeight;
 	//background-color:$red;
-	display:table;
-	table-layout: fixed;
+	//display:table;
+	//table-layout: fixed;
+	@include flexbox();
 	margin-left:auto;
 	margin-right:auto
 }
@@ -47,7 +48,7 @@ nav{
 	//background-color:$grey;
 }
 .triangleContainer{
-	display:table-cell;
+	//display:table-cell;
 	width:$triangleHeight*2;
 	height:$triangleHeight;
 
@@ -86,7 +87,8 @@ nav{
 }
 
 .filler{
-	display:table-cell;
+	//display:table-cell;
+	@include flex(1);
 	height:$triangleHeight;
 	background-color:$white;
 }
