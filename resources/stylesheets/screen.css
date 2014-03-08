@@ -75,14 +75,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 @font-face {
   font-family: "bitter";
-  src: url('/fonts/bitter/bitter-webfont.eot');
-  src: url('/fonts/bitter/bitter-webfont.eot?#iefix') format('eot'), url('/fonts/bitter/bitter-webfont.ttf') format('truetype'), url('/fonts/bitter/bitter-webfont.svg') format('svg'), url('/fonts/bitter/bitter-webfont.woff') format('woff'), url('/fonts/bitter/bitter-webfont.eot') format('embedded-opentype');
+  src: url('/fonts/Bitter/bitter-regular-webfont.eot');
+  src: url('/fonts/Bitter/bitter-regular-webfont.eot?#iefix') format('eot'), url('/fonts/Bitter/bitter-regular-webfont.ttf') format('truetype'), url('/fonts/Bitter/bitter-regular-webfont.svg') format('svg'), url('/fonts/Bitter/bitter-regular-webfont.woff') format('woff'), url('/fonts/Bitter/bitter-regular-webfont.eot') format('embedded-opentype');
 }
 
 @font-face {
   font-family: "bitter";
-  src: url('/fonts/bitter-bold/bitter-bold-webfont.eot');
-  src: url('/fonts/bitter-bold/bitter-bold-webfont.eot?#iefix') format('eot'), url('/fonts/bitter-bold/bitter-bold-webfont.ttf') format('truetype'), url('/fonts/bitter-bold/bitter-bold-webfont.svg') format('svg'), url('/fonts/bitter-bold/bitter-bold-webfont.woff') format('woff'), url('/fonts/bitter-bold/bitter-bold-webfont.eot') format('embedded-opentype');
+  src: url('/fonts/Bitter-bold/bitter-bold-webfont.eot');
+  src: url('/fonts/Bitter-bold/bitter-bold-webfont.eot?#iefix') format('eot'), url('/fonts/Bitter-bold/bitter-bold-webfont.ttf') format('truetype'), url('/fonts/Bitter-bold/bitter-bold-webfont.svg') format('svg'), url('/fonts/Bitter-bold/bitter-bold-webfont.woff') format('woff'), url('/fonts/Bitter-bold/bitter-bold-webfont.eot') format('embedded-opentype');
   font-weight: bold;
 }
 
@@ -459,11 +459,6 @@ p, a {
   font-size: 1.8em;
 }
 
-/* line 28, ../sass/shared/_common.scss */
-img {
-  max-height: 100%;
-}
-
 /* line 32, ../sass/shared/_common.scss */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
@@ -810,6 +805,7 @@ h2.projectsTitle {
     max-width: 480px;
     min-height: 100px;
     text-align: center;
+    color: #303030;
   }
   /* line 86, ../sass/content/_projects.scss */
   .project h3 {
@@ -825,7 +821,7 @@ h2.projectsTitle {
     position: static;
     text-align: center;
     height: 100px;
-    background-color: #001030;
+    background-color: #303030;
     border-radius: 5px;
     margin-bottom: 10px;
   }
@@ -847,21 +843,17 @@ h2.projectsTitle {
     margin-top: 0%;
     text-align: right;
   }
-  /* line 118, ../sass/content/_projects.scss */
-  a.projectImageContainer .details .text .role .tools {
-    color: #660000;
-  }
-  /* line 123, ../sass/content/_projects.scss */
+  /* line 124, ../sass/content/_projects.scss */
   a.projectImageContainer .projectImage {
     width: 40%;
   }
-  /* line 128, ../sass/content/_projects.scss */
+  /* line 129, ../sass/content/_projects.scss */
   a.projectImageContainer .projectImage img {
     max-height: 100%;
     max-width: none;
   }
 
-  /* line 135, ../sass/content/_projects.scss */
+  /* line 136, ../sass/content/_projects.scss */
   .projectImage:hover + .details, .details:hover {
     display: inline-block;
   }

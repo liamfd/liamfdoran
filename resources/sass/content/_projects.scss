@@ -1,6 +1,6 @@
 $rowHeight: 150px;
 $containerHeight:134px;
-
+$dark-grey:#303030;
 h2.projectsTitle{
 	color:$secondary;
 }
@@ -82,7 +82,7 @@ h2.projectsTitle{
 		max-width: 480px;
 		min-height:100px;
 		text-align:center;
-		$color:$secondary;
+		color:$dark-grey;
 			h3{
 			color:$secondary;
 			font-size:2em;
@@ -96,7 +96,7 @@ h2.projectsTitle{
 		position:static;
 		text-align:center;
 		height:100px;
-		background-color:$secondary;
+		background-color:$dark-grey;
 		border-radius: 5px;
 
 		margin-bottom:10px;
@@ -107,7 +107,7 @@ h2.projectsTitle{
 			vertical-align: top;
 		}
 		.details{
-			background-color:#303030;
+			background-color:$dark-grey;
 			padding:10px;
 			max-width:60%;
 			.text{
@@ -116,7 +116,8 @@ h2.projectsTitle{
 				text-align:right;
 
 				.role .tools{
-					color:$red;
+				//	font-size:.8em;
+				//	color:$red;
 				}
 			}
 		}
