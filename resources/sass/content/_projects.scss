@@ -77,8 +77,6 @@ h2.projectsTitle{
 }
 
 @media only screen and (max-device-width: 800px), only screen and (max-width: 800px){
-
-
 	.project{
 		width:100%;
 		max-width: 480px;
@@ -111,8 +109,7 @@ h2.projectsTitle{
 		.details{
 			background-color:#303030;
 			padding:10px;
-			width:60%;
-			min-width: 181px;
+			max-width:60%;
 			.text{
 				margin-top:0%;
 				//color:$;
@@ -125,14 +122,23 @@ h2.projectsTitle{
 		}
 		.projectImage{
 			width:40%;
+			//min-width: 181px;
+			
+
+			img{
+				max-height:100%;
+				max-width: none;
+			}
+
 		}
 	}
 	.projectImage:hover + .details, .details:hover{
 		display:inline-block;
 	}
 
-	img{
-		max-height:100%;
-	}
+}
+
+
+@media only screen and (max-device-width: 800px), only screen and (max-width: 800px){
 
 }
