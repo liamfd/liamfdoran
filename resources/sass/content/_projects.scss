@@ -23,7 +23,7 @@ h2.projectsTitle{
 
 .projectImageContainer{
 	width:100%;
-	height:$containerHeight; //ugly little solution that works b/c of my image res
+//	height:$containerHeight; //ugly little solution that works b/c of my image res
     position:relative;
 	display:inline-block;
 //	overflow:hidden;
@@ -71,7 +71,7 @@ h2.projectsTitle{
 	.project{
 		width:100%;
 		max-width: 480px;
-		min-height:100px;
+		//min-height:100px;
 		text-align:center;
 		color:$dark-grey;
 			h3{
@@ -80,11 +80,11 @@ h2.projectsTitle{
 			font-weight: bold;
 		}
 	}
-	a.projectImageContainer{
+	.projectImageContainer{
 		@include flexbox();
 		position:static;
 		width:100%;
-		height:100px;
+	//	height:100%;
 		margin-bottom:10px;
 		
 		background-color:$dark-grey;
@@ -97,7 +97,7 @@ h2.projectsTitle{
 			position: static;
 			display:inline-block;
 			vertical-align: top;
-			height:100px;
+			height:100%;
 		
 		}
 		.details{
@@ -111,12 +111,8 @@ h2.projectsTitle{
 			}
 		}
 		.projectImage{
-			width:181px; //comes from the resolution
-		
-			img{
-				max-height:100%;
-				max-width: none;
-			}
+			//width:181px; //comes from the resolution
+			max-width:40%;
 
 		}
 	}
@@ -124,4 +120,14 @@ h2.projectsTitle{
 		display:inline-block;
 	}
 
+}
+
+
+@media only screen and (max-device-width: 360px), only screen and (max-width: 360px){
+	
+	.projectImageContainer{
+		.details{
+			font-size: .8em;
+		}
+	}
 }
