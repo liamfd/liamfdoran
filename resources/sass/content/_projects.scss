@@ -98,8 +98,10 @@ h2.projectsTitle{
 		height:100px;
 		background-color:$dark-grey;
 		border-radius: 5px;
+		text-decoration: none;
 
 		margin-bottom:10px;
+		@include flexbox();
 		.projectImage, .details{
 			height:100px;
 			position: static;
@@ -107,14 +109,14 @@ h2.projectsTitle{
 			vertical-align: top;
 		}
 		.details{
+			@include flex(1);
 			background-color:$dark-grey;
 			padding:10px;
-			max-width:60%;
+			font-size:.9em;
 			.text{
 				margin-top:0%;
-				//color:$;
 				text-align:right;
-
+				text-decoration: none;
 				.role .tools{
 				//	font-size:.8em;
 				//	color:$red;
@@ -122,7 +124,7 @@ h2.projectsTitle{
 			}
 		}
 		.projectImage{
-			width:40%;
+			width:181px; //comes from the resolution
 			//min-width: 181px;
 			
 
@@ -136,10 +138,5 @@ h2.projectsTitle{
 	.projectImage:hover + .details, .details:hover{
 		display:inline-block;
 	}
-
-}
-
-
-@media only screen and (max-device-width: 800px), only screen and (max-width: 800px){
 
 }

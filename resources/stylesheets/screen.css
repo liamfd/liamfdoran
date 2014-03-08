@@ -823,37 +823,49 @@ h2.projectsTitle {
     height: 100px;
     background-color: #303030;
     border-radius: 5px;
+    text-decoration: none;
     margin-bottom: 10px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
   }
-  /* line 103, ../sass/content/_projects.scss */
+  /* line 105, ../sass/content/_projects.scss */
   a.projectImageContainer .projectImage, a.projectImageContainer .details {
     height: 100px;
     position: static;
     display: inline-block;
     vertical-align: top;
   }
-  /* line 109, ../sass/content/_projects.scss */
+  /* line 111, ../sass/content/_projects.scss */
   a.projectImageContainer .details {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
     background-color: #303030;
     padding: 10px;
-    max-width: 60%;
+    font-size: .9em;
   }
-  /* line 113, ../sass/content/_projects.scss */
+  /* line 116, ../sass/content/_projects.scss */
   a.projectImageContainer .details .text {
     margin-top: 0%;
     text-align: right;
+    text-decoration: none;
   }
-  /* line 124, ../sass/content/_projects.scss */
+  /* line 126, ../sass/content/_projects.scss */
   a.projectImageContainer .projectImage {
-    width: 40%;
+    width: 181px;
   }
-  /* line 129, ../sass/content/_projects.scss */
+  /* line 131, ../sass/content/_projects.scss */
   a.projectImageContainer .projectImage img {
     max-height: 100%;
     max-width: none;
   }
 
-  /* line 136, ../sass/content/_projects.scss */
+  /* line 138, ../sass/content/_projects.scss */
   .projectImage:hover + .details, .details:hover {
     display: inline-block;
   }
