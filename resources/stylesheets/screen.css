@@ -69,20 +69,20 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 @font-face {
   font-family: "telegrafico";
-  src: url('/fonts/telegrafico/telegrafico.eot');
-  src: url('/fonts/telegrafico/telegrafico.eot?#iefix') format('eot'), url('/fonts/telegrafico/telegrafico.ttf') format('truetype'), url('/fonts/telegrafico/telegrafico.svg') format('svg'), url('/fonts/telegrafico/telegrafico.woff') format('woff'), url('/fonts/telegrafico/telegrafico.eot') format('embedded-opentype');
+  src: url('/fonts/telegrafico/telegrafico-webfont.eot');
+  src: url('/fonts/telegrafico/telegrafico-webfont.eot?#iefix') format('eot'), url('/fonts/telegrafico/telegrafico-webfont.ttf') format('truetype'), url('/fonts/telegrafico/telegrafico-webfont.svg') format('svg'), url('/fonts/telegrafico/telegrafico-webfont.woff') format('woff'), url('/fonts/telegrafico/telegrafico-webfont.eot') format('embedded-opentype');
 }
 
 @font-face {
   font-family: "bitter";
-  src: url('/fonts/bitter/bitter.eot');
-  src: url('/fonts/bitter/bitter.eot?#iefix') format('eot'), url('/fonts/bitter/bitter.ttf') format('truetype'), url('/fonts/bitter/bitter.svg') format('svg'), url('/fonts/bitter/bitter.woff') format('woff'), url('/fonts/bitter/bitter.eot') format('embedded-opentype');
+  src: url('/fonts/bitter/bitter-webfont.eot');
+  src: url('/fonts/bitter/bitter-webfont.eot?#iefix') format('eot'), url('/fonts/bitter/bitter-webfont.ttf') format('truetype'), url('/fonts/bitter/bitter-webfont.svg') format('svg'), url('/fonts/bitter/bitter-webfont.woff') format('woff'), url('/fonts/bitter/bitter-webfont.eot') format('embedded-opentype');
 }
 
 @font-face {
   font-family: "bitter";
-  src: url('/fonts/bitter-bold/bitter-bold.eot');
-  src: url('/fonts/bitter-bold/bitter-bold.eot?#iefix') format('eot'), url('/fonts/bitter-bold/bitter-bold.ttf') format('truetype'), url('/fonts/bitter-bold/bitter-bold.svg') format('svg'), url('/fonts/bitter-bold/bitter-bold.woff') format('woff'), url('/fonts/bitter-bold/bitter-bold.eot') format('embedded-opentype');
+  src: url('/fonts/bitter-bold/bitter-bold-webfont.eot');
+  src: url('/fonts/bitter-bold/bitter-bold-webfont.eot?#iefix') format('eot'), url('/fonts/bitter-bold/bitter-bold-webfont.ttf') format('truetype'), url('/fonts/bitter-bold/bitter-bold-webfont.svg') format('svg'), url('/fonts/bitter-bold/bitter-bold-webfont.woff') format('woff'), url('/fonts/bitter-bold/bitter-bold-webfont.eot') format('embedded-opentype');
   font-weight: bold;
 }
 
