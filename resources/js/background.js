@@ -6,6 +6,7 @@ $(window).load(function() {
         controlsContainer: ".nav",
         manualControls: "nav .navBlock",
         sync:"#background-slider",
+        smoothHeight:true,
       //  animationLoop:false,
       //  asNavFor:'#background-slider',
         slideshow:false

@@ -550,10 +550,13 @@ h1.name {
 
 /* line 64, ../sass/shared/_frame.scss */
 .container {
-  padding: 20px 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 35px;
 }
 
-/* line 68, ../sass/shared/_frame.scss */
+/* line 71, ../sass/shared/_frame.scss */
 a.email {
   display: inline-block;
   text-decoration: none;
@@ -562,6 +565,12 @@ a.email {
   font-size: 20px;
 }
 
+@media only screen and (max-device-width: 480px), only screen and (max-width: 480px) {
+  /* line 81, ../sass/shared/_frame.scss */
+  .centered {
+    margin-top: 0px;
+  }
+}
 		                                   /*
 $triangleHeight: 30px; //really a width too
 .navEleWrapper{
@@ -741,7 +750,6 @@ h2.projectsTitle {
 .project {
   display: inline-block;
   width: 30%;
-  height: 30px;
   text-align: center;
 }
 /* line 18, ../sass/content/_projects.scss */
@@ -756,7 +764,6 @@ h2.projectsTitle {
   height: 134px;
   position: relative;
   display: inline-block;
-  overflow: hidden;
   	/*width:30%;
   	vertical-align:top;
   
@@ -783,23 +790,23 @@ h2.projectsTitle {
   margin-top: 16%;
   color: #f2f2f2;
 }
-/* line 64, ../sass/content/_projects.scss */
+/* line 55, ../sass/content/_projects.scss */
 .projectImageContainer .projectImage {
   text-align: center;
 }
-/* line 66, ../sass/content/_projects.scss */
+/* line 57, ../sass/content/_projects.scss */
 .projectImageContainer .projectImage img {
   display: inline-block;
 }
 
 @media only screen and (min-device-width: 800px), only screen and (min-width: 800px) {
-  /* line 74, ../sass/content/_projects.scss */
+  /* line 65, ../sass/content/_projects.scss */
   .projectImage:hover + .details, .details:hover {
     display: block;
   }
 }
 @media only screen and (max-device-width: 800px), only screen and (max-width: 800px) {
-  /* line 80, ../sass/content/_projects.scss */
+  /* line 71, ../sass/content/_projects.scss */
   .project {
     width: 100%;
     max-width: 480px;
@@ -807,38 +814,37 @@ h2.projectsTitle {
     text-align: center;
     color: #303030;
   }
-  /* line 86, ../sass/content/_projects.scss */
+  /* line 77, ../sass/content/_projects.scss */
   .project h3 {
     color: #001030;
     font-size: 2em;
     font-weight: bold;
   }
 
-  /* line 92, ../sass/content/_projects.scss */
+  /* line 83, ../sass/content/_projects.scss */
   a.projectImageContainer {
-    width: 100%;
-    display: inline-block;
-    position: static;
-    text-align: center;
-    height: 100px;
-    background-color: #303030;
-    border-radius: 5px;
-    text-decoration: none;
-    margin-bottom: 10px;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-  }
-  /* line 105, ../sass/content/_projects.scss */
-  a.projectImageContainer .projectImage, a.projectImageContainer .details {
+    position: static;
+    width: 100%;
     height: 100px;
+    margin-bottom: 10px;
+    background-color: #303030;
+    border-radius: 5px;
+    overflow: hidden;
+    text-decoration: none;
+  }
+  /* line 96, ../sass/content/_projects.scss */
+  a.projectImageContainer .projectImage, a.projectImageContainer .details {
     position: static;
     display: inline-block;
     vertical-align: top;
+    height: 100px;
   }
-  /* line 111, ../sass/content/_projects.scss */
+  /* line 103, ../sass/content/_projects.scss */
   a.projectImageContainer .details {
     -webkit-box-flex: 1;
     -moz-box-flex: 1;
@@ -849,23 +855,22 @@ h2.projectsTitle {
     padding: 10px;
     font-size: .9em;
   }
-  /* line 116, ../sass/content/_projects.scss */
+  /* line 108, ../sass/content/_projects.scss */
   a.projectImageContainer .details .text {
     margin-top: 0%;
     text-align: right;
-    text-decoration: none;
   }
-  /* line 126, ../sass/content/_projects.scss */
+  /* line 113, ../sass/content/_projects.scss */
   a.projectImageContainer .projectImage {
     width: 181px;
   }
-  /* line 131, ../sass/content/_projects.scss */
+  /* line 116, ../sass/content/_projects.scss */
   a.projectImageContainer .projectImage img {
     max-height: 100%;
     max-width: none;
   }
 
-  /* line 138, ../sass/content/_projects.scss */
+  /* line 123, ../sass/content/_projects.scss */
   .projectImage:hover + .details, .details:hover {
     display: inline-block;
   }

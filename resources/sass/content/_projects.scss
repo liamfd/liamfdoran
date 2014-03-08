@@ -13,7 +13,7 @@ h2.projectsTitle{
 .project{
 	display:inline-block;
 	width:30%;
-	height:30px;
+//	height:30px;
 	text-align:center;
 	h3{
 		font-weight:bold;
@@ -26,7 +26,7 @@ h2.projectsTitle{
 	height:$containerHeight; //ugly little solution that works b/c of my image res
     position:relative;
 	display:inline-block;
-	overflow:hidden;
+//	overflow:hidden;
 
 	/*width:30%;
 	vertical-align:top;
@@ -50,15 +50,6 @@ h2.projectsTitle{
     	.text{
     		margin-top: 16%;
     		color:$white;
-			.role{
-				//font-size: 1.5em;
-			}
-			.tools{
-			//	font-size: 1em;
-			}
-    	//	font-size: 2em;
-    	//	font-family: bitter;
-    	//	color:$white;
     	}
 	}
 	.projectImage{
@@ -90,23 +81,24 @@ h2.projectsTitle{
 		}
 	}
 	a.projectImageContainer{
-		width:100%;
-		display:inline-block;
-		//height:150px;
+		@include flexbox();
 		position:static;
-		text-align:center;
+		width:100%;
 		height:100px;
+		margin-bottom:10px;
+		
 		background-color:$dark-grey;
-		border-radius: 5px;
+		border-radius:5px;
+		overflow:hidden;
+		
 		text-decoration: none;
 
-		margin-bottom:10px;
-		@include flexbox();
 		.projectImage, .details{
-			height:100px;
 			position: static;
 			display:inline-block;
 			vertical-align: top;
+			height:100px;
+		
 		}
 		.details{
 			@include flex(1);
@@ -116,18 +108,11 @@ h2.projectsTitle{
 			.text{
 				margin-top:0%;
 				text-align:right;
-				text-decoration: none;
-				.role .tools{
-				//	font-size:.8em;
-				//	color:$red;
-				}
 			}
 		}
 		.projectImage{
 			width:181px; //comes from the resolution
-			//min-width: 181px;
-			
-
+		
 			img{
 				max-height:100%;
 				max-width: none;
