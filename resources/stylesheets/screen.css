@@ -69,7 +69,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 @font-face {
   font-family: "telegrafico";
-  src: url('/fonts/telegrafico/telegrafico.ttf') format('truetype');
+  src: url('/fonts/telegrafico/telegrafico.eot');
+  src: url('/fonts/telegrafico/telegrafico.eot?#iefix') format('eot'), url('/fonts/telegrafico/telegrafico.ttf') format('truetype'), url('/fonts/telegrafico/telegrafico.svg') format('svg'), url('/fonts/telegrafico/telegrafico.woff') format('woff'), url('/fonts/telegrafico/telegrafico.eot') format('embedded-opentype');
+}
+
+@font-face {
+  font-family: "bitter";
+  src: url('/fonts/bitter/bitter.eot');
+  src: url('/fonts/bitter/bitter.eot?#iefix') format('eot'), url('/fonts/bitter/bitter.ttf') format('truetype'), url('/fonts/bitter/bitter.svg') format('svg'), url('/fonts/bitter/bitter.woff') format('woff'), url('/fonts/bitter/bitter.eot') format('embedded-opentype');
+}
+
+@font-face {
+  font-family: "bitter";
+  src: url('/fonts/bitter-bold/bitter-bold.eot');
+  src: url('/fonts/bitter-bold/bitter-bold.eot?#iefix') format('eot'), url('/fonts/bitter-bold/bitter-bold.ttf') format('truetype'), url('/fonts/bitter-bold/bitter-bold.svg') format('svg'), url('/fonts/bitter-bold/bitter-bold.woff') format('woff'), url('/fonts/bitter-bold/bitter-bold.eot') format('embedded-opentype');
+  font-weight: bold;
 }
 
 /*
@@ -421,7 +435,7 @@ body {
 
 /* line 7, ../sass/shared/_common.scss */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "telegrafico", "Times New Roman", sans-serif;
+  font-family: "telegrafico", Arial, Helvetica, sans-serif;
 }
 
 /* line 10, ../sass/shared/_common.scss */
@@ -441,7 +455,7 @@ h3 {
 
 /* line 23, ../sass/shared/_common.scss */
 p, a {
-  font-family: "Bitter";
+  font-family: "bitter", Georgia, serif;
   font-size: 1.8em;
 }
 
@@ -536,7 +550,7 @@ strong {
 h1.name {
   letter-spacing: 3px;
   color: #f2f2f2;
-  font-family: "telegrafico", "Times New Roman", sans-serif;
+  font-family: "telegrafico", Arial, Helvetica, sans-serif;
 }
 
 /* line 64, ../sass/shared/_frame.scss */

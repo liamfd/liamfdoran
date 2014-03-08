@@ -1,5 +1,10 @@
-@include font-face("telegrafico", font-files("telegrafico/telegrafico.ttf"));
+@include font-face("telegrafico", font-files("telegrafico/telegrafico.ttf", "telegrafico/telegrafico.svg", "telegrafico/telegrafico.woff", "telegrafico/telegrafico.eot"), "telegrafico/telegrafico.eot");
+
+@include font-face("bitter", font-files("bitter/bitter.ttf", "bitter/bitter.svg", "bitter/bitter.woff", "bitter/bitter.eot"), "bitter/bitter.eot");
+@include font-face("bitter", font-files("bitter-bold/bitter-bold.ttf", "bitter-bold/bitter-bold.svg", "bitter-bold/bitter-bold.woff", "bitter-bold/bitter-bold.eot"), "bitter-bold/bitter-bold.eot", bold);
+
 //@include font-face("coolvetica rg", font-files("coolvetica/coolvetica rg.ttf"));
 
-//$coolvetica-font: "coolvetica rg", Arial, Helvetica, sans-serif;
-$telegrafico-font: "telegrafico", "Times New Roman", sans-serif;
+//$coolvetica-font "coolvetica rg", Arial, Helvetica, sans-serif;
+$telegrafico-font: "telegrafico", Arial, Helvetica, sans-serif;
+$bitter-font: "bitter", Georgia, serif;
