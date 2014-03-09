@@ -2,9 +2,6 @@ $triangleHeight:30px;
 $navHeight:40px;
 nav{
 	display:inline-block;
-	height:$navHeight;
-	//padding:10px;
-//	background-color:$white;
 	text-align:center;
 	width:100%;
 }
@@ -16,7 +13,8 @@ nav{
 	//height:$navHeight;
 	.navEleWrapper{
 		width:100%;
-		margin-top:$navHeight - $triangleHeight; //moves it as far from top as it can
+	//	margin-top:$navHeight - $triangleHeight; //moves it as far from top as it can
+	//	padding-top:20px;
 		h3.navTitle{
 			display:inline-block;
 			background-color:$white;
@@ -33,6 +31,7 @@ nav{
 	width:100%;
 
 	border:5px solid $white;
+	border-top:25px solid $white;
 	//height:$navHeight;
 	//background-color:$red;
 	//display:table;

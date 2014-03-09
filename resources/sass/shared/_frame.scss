@@ -1,4 +1,4 @@
-#background-slider{
+#background-slider{ //carousel
     background-color:$grey;
     display:block;
     position:absolute;
@@ -7,29 +7,28 @@
     height:100%;
    // width:100%!important;
    // height:200px;
-    overflow:hidden!important;
+
     width:100%;
     z-index:-1;
+    overflow:hidden;
     border-width:0px;
     margin-bottom:0px;
-    .slides{
+    .slides{ //container for all the the carousel slides
         position:relative;
 
         //height:1000px;
         height:10000px;
         width:100%;
-        background-color:$black;
-        li{   
+        //background-color:$black;
+        li{   //carousel slide
             position: relative;
             height:100%;
             width:100%;
 
-            .color-container{
+            .color-container{ //content of carousel slide
                 position:relative;
                 min-height:100%;
                 min-width:100%;
-             //   max-width:10000%!important;
-              //  margin: 0 auto;
             }
         }
     }
@@ -46,6 +45,7 @@
     max-width:800px;
     width:100%;
     z-index:10;
+    margin-top: 10px;
 }
 
 .frame{

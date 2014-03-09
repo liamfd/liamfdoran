@@ -494,44 +494,44 @@ strong {
   top: 0px;
   left: 0px;
   height: 100%;
-  overflow: hidden !important;
   width: 100%;
   z-index: -1;
+  overflow: hidden;
   border-width: 0px;
   margin-bottom: 0px;
 }
-/* line 15, ../sass/shared/_frame.scss */
+/* line 16, ../sass/shared/_frame.scss */
 #background-slider .slides {
   position: relative;
   height: 10000px;
   width: 100%;
-  background-color: #0b0b0b;
 }
-/* line 22, ../sass/shared/_frame.scss */
+/* line 23, ../sass/shared/_frame.scss */
 #background-slider .slides li {
   position: relative;
   height: 100%;
   width: 100%;
 }
-/* line 27, ../sass/shared/_frame.scss */
+/* line 28, ../sass/shared/_frame.scss */
 #background-slider .slides li .color-container, #background-slider .slides li .primary, #background-slider .slides li .secondary, #background-slider .slides li .tertiary {
   position: relative;
   min-height: 100%;
   min-width: 100%;
 }
 
-/* line 38, ../sass/shared/_frame.scss */
+/* line 37, ../sass/shared/_frame.scss */
 .centered {
   margin-top: 15%;
   text-align: center;
 }
 
-/* line 42, ../sass/shared/_frame.scss */
+/* line 41, ../sass/shared/_frame.scss */
 .frameWrapper {
   display: inline-block;
   max-width: 800px;
   width: 100%;
   z-index: 10;
+  margin-top: 10px;
 }
 
 /* line 51, ../sass/shared/_frame.scss */
@@ -615,22 +615,20 @@ border-top: $triangleHeight solid $primary;*/
 /* line 3, ../sass/shared/_newnav.scss */
 nav {
   display: inline-block;
-  height: 40px;
   text-align: center;
   width: 100%;
 }
 
-/* line 12, ../sass/shared/_newnav.scss */
+/* line 9, ../sass/shared/_newnav.scss */
 .navBlock {
   display: inline-block;
   width: 33%;
 }
-/* line 17, ../sass/shared/_newnav.scss */
+/* line 14, ../sass/shared/_newnav.scss */
 .navBlock .navEleWrapper {
   width: 100%;
-  margin-top: 10px;
 }
-/* line 20, ../sass/shared/_newnav.scss */
+/* line 18, ../sass/shared/_newnav.scss */
 .navBlock .navEleWrapper h3.navTitle {
   display: inline-block;
   background-color: #f2f2f2;
@@ -638,16 +636,17 @@ nav {
   width: 100%;
 }
 
-/* line 28, ../sass/shared/_newnav.scss */
+/* line 26, ../sass/shared/_newnav.scss */
 .centerThird {
   width: 34%;
 }
 
-/* line 31, ../sass/shared/_newnav.scss */
+/* line 29, ../sass/shared/_newnav.scss */
 .navShapeBlock {
   text-align: center;
   width: 100%;
   border: 5px solid #f2f2f2;
+  border-top: 25px solid #f2f2f2;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -657,19 +656,19 @@ nav {
   margin-right: auto;
 }
 
-/* line 44, ../sass/shared/_newnav.scss */
+/* line 43, ../sass/shared/_newnav.scss */
 .ffTriangleWrapper {
   position: relative;
   display: block;
   height: 30px;
 }
 
-/* line 50, ../sass/shared/_newnav.scss */
+/* line 49, ../sass/shared/_newnav.scss */
 .triangleContainer {
   width: 60px;
   height: 30px;
 }
-/* line 55, ../sass/shared/_newnav.scss */
+/* line 54, ../sass/shared/_newnav.scss */
 .triangleContainer .triangle, .triangleContainer .leftTriangle, .triangleContainer .rightTriangle, .triangleContainer .midTriangle {
   display: inline-block;
   position: absolute;
@@ -681,23 +680,23 @@ nav {
   border-left: 30px solid transparent;
   border-right: 30px solid transparent;
 }
-/* line 71, ../sass/shared/_newnav.scss */
+/* line 70, ../sass/shared/_newnav.scss */
 .triangleContainer .leftTriangle {
   left: 0;
   border-left: 0px solid transparent;
 }
-/* line 77, ../sass/shared/_newnav.scss */
+/* line 76, ../sass/shared/_newnav.scss */
 .triangleContainer .rightTriangle {
   left: 30px;
   border-right: 0px solid transparent;
 }
-/* line 82, ../sass/shared/_newnav.scss */
+/* line 81, ../sass/shared/_newnav.scss */
 .triangleContainer .midTriangle {
   border-top: 0px solid transparent;
   border-bottom: 30px solid transparent;
 }
 
-/* line 89, ../sass/shared/_newnav.scss */
+/* line 88, ../sass/shared/_newnav.scss */
 .filler {
   -webkit-box-flex: 1;
   -moz-box-flex: 1;
@@ -708,7 +707,7 @@ nav {
   background-color: #f2f2f2;
 }
 
-/* line 96, ../sass/shared/_newnav.scss */
+/* line 95, ../sass/shared/_newnav.scss */
 .triangleContainer:hover .midTriangle {
   border-bottom: 30px solid rgba(255, 255, 255, 0.3);
 }
