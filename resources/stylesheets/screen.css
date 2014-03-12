@@ -868,8 +868,9 @@ h2.projectsTitle {
     display: inline-block;
     vertical-align: top;
     height: 100%;
+    max-height: 100px;
   }
-  /* line 116, ../sass/content/_projects.scss */
+  /* line 117, ../sass/content/_projects.scss */
   .projectImageContainer .details {
     -webkit-box-flex: 1;
     -moz-box-flex: 1;
@@ -880,25 +881,48 @@ h2.projectsTitle {
     padding: 10px;
     font-size: .9em;
   }
-  /* line 121, ../sass/content/_projects.scss */
+  /* line 122, ../sass/content/_projects.scss */
   .projectImageContainer .details .text {
     margin-top: 0%;
     text-align: right;
   }
-  /* line 126, ../sass/content/_projects.scss */
+  /* line 127, ../sass/content/_projects.scss */
   .projectImageContainer .projectImage {
     max-width: 40%;
   }
 
-  /* line 132, ../sass/content/_projects.scss */
+  /* line 133, ../sass/content/_projects.scss */
   .projectImage:hover + .details, .details:hover {
     display: inline-block;
   }
 }
-@media only screen and (max-device-width: 360px), only screen and (max-width: 360px) {
-  /* line 142, ../sass/content/_projects.scss */
+@media only screen and (max-device-width: 480px), only screen and (max-width: 480px) {
+  /* line 141, ../sass/content/_projects.scss */
+  .projectImageContainer {
+    min-height: none;
+    height: none;
+  }
+  /* line 144, ../sass/content/_projects.scss */
+  .projectImageContainer .projectImage {
+    min-height: none;
+    height: none;
+    overflow: none;
+    margin-bottom: -3px;
+  }
+  /* line 150, ../sass/content/_projects.scss */
+  .projectImageContainer .projectImage img {
+    max-height: 100%;
+    max-width: 100%;
+  }
+  /* line 155, ../sass/content/_projects.scss */
   .projectImageContainer .details {
     font-size: .8em;
+  }
+}
+@media only screen and (max-device-width: 360px), only screen and (max-width: 360px) {
+  /* line 165, ../sass/content/_projects.scss */
+  .projectImageContainer .details {
+    font-size: .6em;
   }
 }
 /* line 1, ../sass/content/_contact.scss */

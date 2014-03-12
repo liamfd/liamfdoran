@@ -97,7 +97,7 @@ h2.projectsTitle{
 		@include flexbox();
 		position:static;
 		width:100%;
-	//	height:100%;
+		//height:105px; //ugly fix, again, the resolution
 		margin-bottom:10px;
 		
 		background-color:$dark-grey;
@@ -111,6 +111,7 @@ h2.projectsTitle{
 			display:inline-block;
 			vertical-align: top;
 			height:100%;
+			max-height:100px;
 		
 		}
 		.details{
@@ -136,11 +137,33 @@ h2.projectsTitle{
 }
 
 
+@media only screen and (max-device-width: 480px), only screen and (max-width: 480px){
+	.projectImageContainer{
+		min-height: none;
+		height:none;
+		.projectImage{
+			min-height: none;
+			height:none;
+			overflow:none;
+			margin-bottom:-3px; //fix for rescaling, due to the image resolution
+		
+			img{
+				max-height:100%;
+				max-width:100%;
+			}
+		}
+		.details{
+			font-size: .8em;
+		}
+	}
+
+}
+
 @media only screen and (max-device-width: 360px), only screen and (max-width: 360px){
 	
 	.projectImageContainer{
 		.details{
-			font-size: .8em;
+			font-size: .6em;
 		}
 	}
 }
