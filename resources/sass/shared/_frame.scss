@@ -1,10 +1,11 @@
 #background-slider{ //carousel
     background-color:$grey;
     display:block;
-    position:absolute;
+    position:fixed;
     top:0px;
     left:0px;
-    height:100%;
+    min-width:100%;
+    min-height:100%;
    // width:100%!important;
    // height:200px;
 

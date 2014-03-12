@@ -490,42 +490,43 @@ strong {
 #background-slider {
   background-color: gray;
   display: block;
-  position: absolute;
+  position: fixed;
   top: 0px;
   left: 0px;
-  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
   width: 100%;
   z-index: -1;
   overflow: hidden;
   border-width: 0px;
   margin-bottom: 0px;
 }
-/* line 16, ../sass/shared/_frame.scss */
+/* line 17, ../sass/shared/_frame.scss */
 #background-slider .slides {
   position: relative;
   height: 10000px;
   width: 100%;
 }
-/* line 23, ../sass/shared/_frame.scss */
+/* line 24, ../sass/shared/_frame.scss */
 #background-slider .slides li {
   position: relative;
   height: 100%;
   width: 100%;
 }
-/* line 28, ../sass/shared/_frame.scss */
+/* line 29, ../sass/shared/_frame.scss */
 #background-slider .slides li .color-container, #background-slider .slides li .primary, #background-slider .slides li .secondary, #background-slider .slides li .tertiary {
   position: relative;
   min-height: 100%;
   min-width: 100%;
 }
 
-/* line 37, ../sass/shared/_frame.scss */
+/* line 38, ../sass/shared/_frame.scss */
 .centered {
   margin-top: 15%;
   text-align: center;
 }
 
-/* line 41, ../sass/shared/_frame.scss */
+/* line 42, ../sass/shared/_frame.scss */
 .frameWrapper {
   display: inline-block;
   max-width: 800px;
@@ -534,21 +535,21 @@ strong {
   margin-top: 10px;
 }
 
-/* line 51, ../sass/shared/_frame.scss */
+/* line 52, ../sass/shared/_frame.scss */
 .frame {
   display: inline-block;
   background-color: #f2f2f2;
   width: 100%;
 }
 
-/* line 58, ../sass/shared/_frame.scss */
+/* line 59, ../sass/shared/_frame.scss */
 h1.name {
   letter-spacing: 3px;
   color: #f2f2f2;
   font-family: "telegrafico", Arial, Helvetica, sans-serif;
 }
 
-/* line 64, ../sass/shared/_frame.scss */
+/* line 65, ../sass/shared/_frame.scss */
 .container {
   padding-top: 10px;
   padding-left: 10px;
@@ -557,7 +558,7 @@ h1.name {
   min-height: 280px;
 }
 
-/* line 72, ../sass/shared/_frame.scss */
+/* line 73, ../sass/shared/_frame.scss */
 a.email {
   display: inline-block;
   text-decoration: none;
@@ -567,7 +568,7 @@ a.email {
 }
 
 @media only screen and (max-device-width: 480px), only screen and (max-width: 480px) {
-  /* line 82, ../sass/shared/_frame.scss */
+  /* line 83, ../sass/shared/_frame.scss */
   .centered {
     margin-top: 0px;
   }
