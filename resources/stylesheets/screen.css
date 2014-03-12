@@ -858,7 +858,6 @@ h2.projectsTitle {
     width: 100%;
     margin-bottom: 10px;
     background-color: #303030;
-    border-radius: 5px;
     overflow: hidden;
     text-decoration: none;
   }
@@ -907,7 +906,7 @@ h2.projectsTitle {
     min-height: none;
     height: none;
     overflow: none;
-    margin-bottom: -3px;
+    margin-bottom: -4px;
   }
   /* line 150, ../sass/content/_projects.scss */
   .projectImageContainer .projectImage img {
@@ -922,7 +921,7 @@ h2.projectsTitle {
 @media only screen and (max-device-width: 360px), only screen and (max-width: 360px) {
   /* line 165, ../sass/content/_projects.scss */
   .projectImageContainer .details {
-    font-size: .6em;
+    font-size: .7em;
   }
 }
 /* line 1, ../sass/content/_contact.scss */

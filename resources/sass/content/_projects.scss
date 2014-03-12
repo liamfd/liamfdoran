@@ -101,7 +101,7 @@ h2.projectsTitle{
 		margin-bottom:10px;
 		
 		background-color:$dark-grey;
-		border-radius:5px;
+		//border-radius:5px;
 		overflow:hidden;
 		
 		text-decoration: none;
@@ -145,7 +145,7 @@ h2.projectsTitle{
 			min-height: none;
 			height:none;
 			overflow:none;
-			margin-bottom:-3px; //fix for rescaling, due to the image resolution
+			margin-bottom:-4px; //fix for rescaling, due to the image resolution
 		
 			img{
 				max-height:100%;
@@ -163,7 +163,7 @@ h2.projectsTitle{
 	
 	.projectImageContainer{
 		.details{
-			font-size: .6em;
+			font-size: .7em;
 		}
 	}
 }
