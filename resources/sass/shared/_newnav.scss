@@ -63,8 +63,8 @@ nav{
 		height: 0; 
 	//	background-color:$white;
 		border-top: $triangleHeight solid $white;
-		border-left: $triangleHeight solid transparent;
-		border-right: $triangleHeight solid transparent;
+		border-left: $triangleHeight solid $white;
+		border-right: $triangleHeight solid $white;
 	}
 
 	.leftTriangle{

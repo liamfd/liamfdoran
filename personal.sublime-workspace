@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"border",
+				"border-top"
+			],
+			[
 				"projec",
 				"projectImageContainer"
 			],
@@ -30,10 +34,6 @@
 			[
 				"tria",
 				"triangleHeight"
-			],
-			[
-				"border",
-				"border-bottom"
 			],
 			[
 				"color",
@@ -523,7 +523,7 @@
 			"file": "resources/sass/shared/_frame.scss",
 			"settings":
 			{
-				"buffer_size": 1549,
+				"buffer_size": 1583,
 				"line_ending": "Unix"
 			}
 		},
@@ -532,14 +532,6 @@
 			"settings":
 			{
 				"buffer_size": 2016,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "views/shared/nav.jade",
-			"settings":
-			{
-				"buffer_size": 178,
 				"line_ending": "Unix"
 			}
 		},
@@ -555,7 +547,7 @@
 			"file": "resources/sass/shared/_newnav.scss",
 			"settings":
 			{
-				"buffer_size": 1809,
+				"buffer_size": 1799,
 				"line_ending": "Unix"
 			}
 		},
@@ -652,6 +644,7 @@
 	},
 	"file_history":
 	[
+		"/home/liam/projs/liamfdoran/views/shared/nav.jade",
 		"/home/liam/projs/liamfdoran/fonts/Bitter/bitter-regular-demo.html",
 		"/home/liam/projs/liamfdoran/index.html",
 		"/home/liam/projs/liamfdoran/views/shared/head.jade",
@@ -680,7 +673,6 @@
 		"/home/liam/.config/sublime-text-2/Packages/User/SFTP.errors.log",
 		"/home/liam/projs/liamfdoran/views/content/single.jade",
 		"/home/liam/projs/liamfdoran/resources/sass/shared/_nav.scss",
-		"/home/liam/projs/liamfdoran/views/shared/nav.jade",
 		"/home/liam/projs/liamfdoran/resources/sass/print.scss",
 		"/home/liam/projs/liamfdoran/pages/singlepage.jade",
 		"/home/liam/projs/liamfdoran/resources/sass/utils/_jquery.openCarousel.scss",
@@ -990,7 +982,7 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -998,15 +990,15 @@
 					"file": "resources/sass/shared/_frame.scss",
 					"settings":
 					{
-						"buffer_size": 1549,
+						"buffer_size": 1583,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1193,
-								1193
+								1021,
+								1021
 							]
 						],
 						"settings":
@@ -1108,7 +1100,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 345.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1235,124 +1227,6 @@
 				},
 				{
 					"buffer": 2,
-					"file": "views/shared/nav.jade",
-					"settings":
-					{
-						"buffer_size": 178,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"annotations":
-							[
-								"TODO",
-								"README",
-								"FIXME"
-							],
-							"csslint_options":
-							{
-								"adjoining-classes": "warning",
-								"box-model": true,
-								"box-sizing": "warning",
-								"compatible-vendor-prefixes": "warning",
-								"display-property-grouping": true,
-								"duplicate-background-images": "warning",
-								"duplicate-properties": true,
-								"empty-rules": true,
-								"errors": true,
-								"fallback-colors": "warning",
-								"floats": "warning",
-								"font-faces": "warning",
-								"font-sizes": "warning",
-								"gradients": "warning",
-								"ids": "warning",
-								"import": "warning",
-								"important": "warning",
-								"known-properties": true,
-								"outline-none": "warning",
-								"overqualified-elements": "warning",
-								"qualified-headings": "warning",
-								"regex-selectors": "warning",
-								"rules-count": "warning",
-								"shorthand": "warning",
-								"star-property-hack": "warning",
-								"text-indent": "warning",
-								"underscore-property-hack": "warning",
-								"unique-headings": "warning",
-								"universal-selector": "warning",
-								"vendor-prefix": true,
-								"zero-units": "warning"
-							},
-							"gjslint_ignore":
-							[
-								110
-							],
-							"gjslint_options":
-							[
-							],
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"browser": true,
-								"evil": true,
-								"regexdash": true,
-								"sub": true,
-								"trailing": true,
-								"wsh": true
-							},
-							"pep8": true,
-							"pep8_ignore":
-							[
-								"E501"
-							],
-							"perl_linter": "perlcritic",
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"remote_loading": false,
-							"sublimelinter": true,
-							"sublimelinter_delay": 2,
-							"sublimelinter_disable":
-							[
-							],
-							"sublimelinter_executable_map":
-							{
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": true,
-							"sublimelinter_gutter_marks_theme": "simple",
-							"sublimelinter_mark_style": "none",
-							"sublimelinter_notes": false,
-							"sublimelinter_objj_check_ascii": false,
-							"sublimelinter_popup_errors_on_save": false,
-							"sublimelinter_syntax_map":
-							{
-								"C++": "c",
-								"Python Django": "python",
-								"Ruby on Rails": "ruby"
-							},
-							"sublimelinter_wrap_find": true,
-							"synced": false,
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
 					"file": "views/shared/newnav.jade",
 					"settings":
 					{
@@ -1471,19 +1345,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 3,
 					"file": "resources/sass/shared/_newnav.scss",
 					"settings":
 					{
-						"buffer_size": 1809,
+						"buffer_size": 1799,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								896,
-								896
+								565,
+								565
 							]
 						],
 						"settings":
@@ -1584,13 +1458,13 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 759.0,
+						"translation.y": 483.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 4,
 					"file": "resources/sass/content/_bio.scss",
 					"settings":
 					{
@@ -1708,7 +1582,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 5,
 					"file": "views/content/bio.jade",
 					"settings":
 					{
@@ -1826,7 +1700,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 6,
 					"file": "sftp-config.json",
 					"settings":
 					{
@@ -1946,7 +1820,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 7,
 					"file": "resources/sass/content/_projects.scss",
 					"settings":
 					{
@@ -2059,7 +1933,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 48.0,
-						"translation.y": 2425.0,
+						"translation.y": 1528.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
