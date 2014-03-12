@@ -54,6 +54,7 @@ nav{
 	.triangle{
 		display:inline-block;
 		position:absolute;
+		cursor:pointer;
 
 		left:0;
 		z-index:2;
@@ -61,12 +62,11 @@ nav{
 	//	width:$triangleHeight;
 		width: 0; 
 		height: 0; 
-	//	background-color:$white;
 		border-top: $triangleHeight solid $white;
 		border-left: $triangleHeight solid $white;
 		border-right: $triangleHeight solid $white;
 	}
-
+/*
 	.leftTriangle{
 		@extend .triangle;
 		left:0;
@@ -77,8 +77,8 @@ nav{
 		@extend .triangle;
 		left:$triangleHeight;
 		border-right:0px solid transparent;
-	}
-	.midTriangle{
+	}*/
+	a.midTriangle{
 		@extend .triangle;
 		border-top: 0px solid transparent;
 		border-bottom: $triangleHeight solid transparent;
@@ -94,4 +94,8 @@ nav{
 
 .triangleContainer:hover .midTriangle{
 	border-bottom: $triangleHeight solid $trans_white;
+}
+
+.triangleContainer:active .midTriangle{
+	border-bottom: $triangleHeight solid $trans_black;
 }
