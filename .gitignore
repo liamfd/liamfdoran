@@ -1,2 +1,6 @@
 *.html
 /resources/stylesheets
+/.sass-cache
+personal.sublime-project
+personal.sublime-workspace
+sftp-config.json
