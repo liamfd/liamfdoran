@@ -36,7 +36,7 @@
 }
 
 .centered {
-    margin-top: 15%;
+    margin-top: 12%;
     text-align: center;
 }
 .frameWrapper{
@@ -81,6 +81,15 @@ a.email{
 
 @media only screen and (max-device-width: 480px), only screen and (max-width: 480px){
   .centered{
-    margin-top: 0px;
+    margin-top: 5px;
+  }
+  h1.name{
+    font-size:5.3em;
+  }
+  h2{
+    font-size: 5em;
+  }
+  .container{
+    font-size: .9em;
   }
 }

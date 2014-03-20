@@ -522,7 +522,7 @@ strong {
 
 /* line 38, ../sass/shared/_frame.scss */
 .centered {
-  margin-top: 15%;
+  margin-top: 12%;
   text-align: center;
 }
 
@@ -570,7 +570,22 @@ a.email {
 @media only screen and (max-device-width: 480px), only screen and (max-width: 480px) {
   /* line 83, ../sass/shared/_frame.scss */
   .centered {
-    margin-top: 0px;
+    margin-top: 5px;
+  }
+
+  /* line 86, ../sass/shared/_frame.scss */
+  h1.name {
+    font-size: 5.3em;
+  }
+
+  /* line 89, ../sass/shared/_frame.scss */
+  h2 {
+    font-size: 5em;
+  }
+
+  /* line 92, ../sass/shared/_frame.scss */
+  .container {
+    font-size: .9em;
   }
 }
 		                                   /*
@@ -731,18 +746,19 @@ h2.aboutTitle {
 .bioText {
   padding-top: 10px;
   line-height: 2.8em;
+  min-height: 180px;
 }
-/* line 8, ../sass/content/_bio.scss */
+/* line 9, ../sass/content/_bio.scss */
 .bioText p {
   color: gray;
 }
 
-/* line 13, ../sass/content/_bio.scss */
+/* line 14, ../sass/content/_bio.scss */
 .bioWrapper {
   width: 100%;
 }
 
-/* line 17, ../sass/content/_bio.scss */
+/* line 18, ../sass/content/_bio.scss */
 .contactRow {
   text-align: center;
   font-size: 2em;
@@ -768,11 +784,17 @@ h2.projectsTitle {
   text-align: center;
 }
 /* line 18, ../sass/content/_projects.scss */
-.project h3 {
-  font-color: #001030;
+.project a.link_title {
+  color: #0b0b0b;
+  font-family: "telegrafico", Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+/* line 23, ../sass/content/_projects.scss */
+.project a.link_title:visited {
+  color: #0b0b0b;
 }
 
-/* line 23, ../sass/content/_projects.scss */
+/* line 28, ../sass/content/_projects.scss */
 .projectImageContainer {
   width: 96%;
   position: relative;
@@ -783,7 +805,7 @@ h2.projectsTitle {
   	background-color:$grey;
   	height:30px;*/
 }
-/* line 37, ../sass/content/_projects.scss */
+/* line 42, ../sass/content/_projects.scss */
 .projectImageContainer .projectImage, .projectImageContainer .details {
   width: 100%;
   height: 133px;
@@ -792,7 +814,7 @@ h2.projectsTitle {
   left: 0;
   z-index: 1;
 }
-/* line 46, ../sass/content/_projects.scss */
+/* line 51, ../sass/content/_projects.scss */
 .projectImageContainer .details {
   height: 141px;
   padding: 0px 5px;
@@ -801,14 +823,14 @@ h2.projectsTitle {
   background-color: rgba(0, 0, 0, 0.8);
   text-align: center;
 }
-/* line 53, ../sass/content/_projects.scss */
+/* line 58, ../sass/content/_projects.scss */
 .projectImageContainer .details .text {
   display: inline-block;
   vertical-align: middle;
   width: 100%;
   color: #f2f2f2;
 }
-/* line 60, ../sass/content/_projects.scss */
+/* line 65, ../sass/content/_projects.scss */
 .projectImageContainer .details:before {
   content: '';
   display: inline-block;
@@ -817,37 +839,37 @@ h2.projectsTitle {
   margin-right: -.25em;
   /*Adjusts for spacing*/
 }
-/* line 68, ../sass/content/_projects.scss */
+/* line 73, ../sass/content/_projects.scss */
 .projectImageContainer .projectImage {
   text-align: center;
 }
-/* line 70, ../sass/content/_projects.scss */
+/* line 75, ../sass/content/_projects.scss */
 .projectImageContainer .projectImage img {
   display: inline-block;
 }
 
 @media only screen and (min-device-width: 800px), only screen and (min-width: 800px) {
-  /* line 78, ../sass/content/_projects.scss */
+  /* line 83, ../sass/content/_projects.scss */
   .projectImage:hover + .details, .details:hover {
     display: block;
   }
 }
 @media only screen and (max-device-width: 800px), only screen and (max-width: 800px) {
-  /* line 84, ../sass/content/_projects.scss */
+  /* line 89, ../sass/content/_projects.scss */
   .project {
     width: 100%;
     max-width: 480px;
     text-align: center;
     color: #303030;
   }
-  /* line 90, ../sass/content/_projects.scss */
+  /* line 95, ../sass/content/_projects.scss */
   .project h3 {
     color: #001030;
     font-size: 2em;
     font-weight: bold;
   }
 
-  /* line 96, ../sass/content/_projects.scss */
+  /* line 101, ../sass/content/_projects.scss */
   .projectImageContainer {
     display: -webkit-box;
     display: -moz-box;
@@ -861,7 +883,7 @@ h2.projectsTitle {
     overflow: hidden;
     text-decoration: none;
   }
-  /* line 109, ../sass/content/_projects.scss */
+  /* line 114, ../sass/content/_projects.scss */
   .projectImageContainer .projectImage, .projectImageContainer .details {
     position: static;
     display: inline-block;
@@ -869,7 +891,7 @@ h2.projectsTitle {
     height: 100%;
     max-height: 100px;
   }
-  /* line 117, ../sass/content/_projects.scss */
+  /* line 122, ../sass/content/_projects.scss */
   .projectImageContainer .details {
     -webkit-box-flex: 1;
     -moz-box-flex: 1;
@@ -880,46 +902,46 @@ h2.projectsTitle {
     padding: 10px;
     font-size: .9em;
   }
-  /* line 122, ../sass/content/_projects.scss */
+  /* line 127, ../sass/content/_projects.scss */
   .projectImageContainer .details .text {
     margin-top: 0%;
     text-align: right;
   }
-  /* line 127, ../sass/content/_projects.scss */
+  /* line 132, ../sass/content/_projects.scss */
   .projectImageContainer .projectImage {
     max-width: 40%;
   }
 
-  /* line 133, ../sass/content/_projects.scss */
+  /* line 138, ../sass/content/_projects.scss */
   .projectImage:hover + .details, .details:hover {
     display: inline-block;
   }
 }
 @media only screen and (max-device-width: 480px), only screen and (max-width: 480px) {
-  /* line 141, ../sass/content/_projects.scss */
+  /* line 146, ../sass/content/_projects.scss */
   .projectImageContainer {
     min-height: none;
     height: none;
   }
-  /* line 144, ../sass/content/_projects.scss */
+  /* line 149, ../sass/content/_projects.scss */
   .projectImageContainer .projectImage {
     min-height: none;
     height: none;
     overflow: none;
     margin-bottom: -4px;
   }
-  /* line 150, ../sass/content/_projects.scss */
+  /* line 155, ../sass/content/_projects.scss */
   .projectImageContainer .projectImage img {
     max-height: 100%;
     max-width: 100%;
   }
-  /* line 155, ../sass/content/_projects.scss */
+  /* line 160, ../sass/content/_projects.scss */
   .projectImageContainer .details {
     font-size: .8em;
   }
 }
 @media only screen and (max-device-width: 360px), only screen and (max-width: 360px) {
-  /* line 165, ../sass/content/_projects.scss */
+  /* line 170, ../sass/content/_projects.scss */
   .projectImageContainer .details {
     font-size: .7em;
   }

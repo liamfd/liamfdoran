@@ -15,8 +15,13 @@ h2.projectsTitle{
 	width:33%;
 //	height:30px;
 	text-align:center;
-	h3{
-		font-color:$secondary;
+	a.link_title{
+		color:$black;
+		font-family:$telegrafico-font;
+		text-decoration: none;
+	}
+	a.link_title:visited{
+		color:$black;
 	}
 }
 

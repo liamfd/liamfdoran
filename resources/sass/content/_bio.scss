@@ -5,6 +5,7 @@ h2.aboutTitle{
 .bioText{
 	padding-top:10px;
 	line-height:2.8em;
+	min-height:180px;
 	p{
 		color:$grey;
 	}
@@ -17,5 +18,4 @@ h2.aboutTitle{
 .contactRow{
 	text-align:center;
 	font-size:2em;
-
 }
