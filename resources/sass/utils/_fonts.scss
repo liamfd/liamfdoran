@@ -1,7 +1,7 @@
 @include font-face("telegrafico", font-files("telegrafico/telegrafico-webfont.ttf", "telegrafico/telegrafico-webfont.svg", "telegrafico/telegrafico-webfont.woff", "telegrafico/telegrafico-webfont.eot"), "telegrafico/telegrafico-webfont.eot");
 
 @include font-face("bitter", font-files("Bitter/bitter-regular-webfont.ttf", "Bitter/bitter-regular-webfont.svg", "Bitter/bitter-regular-webfont.woff", "Bitter/bitter-regular-webfont.eot"), "Bitter/bitter-regular-webfont.eot");
-@include font-face("bitter", font-files("Bitter-bold/bitter-bold-webfont.ttf", "Bitter-bold/bitter-bold-webfont.svg", "Bitter-bold/bitter-bold-webfont.woff", "Bitter-bold/bitter-bold-webfont.eot"), "Bitter-bold/bitter-bold-webfont.eot", bold);
+@include font-face("bitter-bold", font-files("Bitter-bold/bitter-bold-webfont.ttf", "Bitter-bold/bitter-bold-webfont.svg", "Bitter-bold/bitter-bold-webfont.woff", "Bitter-bold/bitter-bold-webfont.eot"), "Bitter-bold/bitter-bold-webfont.eot", bold);
 
 //@include font-face("coolvetica rg", font-files("coolvetica/coolvetica rg.ttf"));
 
